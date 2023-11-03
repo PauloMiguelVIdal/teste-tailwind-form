@@ -7,7 +7,8 @@ module.exports = {
         'roxo': '#6411D9',
         "roxoForte": "#331B8C", 
         'marinho': '#1A1246',
-        'laranja': '#F27405'
+        'laranja': '#F27405',
+        'preto': '#000000'
       },
       width: {
         '450': '450px',
@@ -26,6 +27,8 @@ module.exports = {
         '3xl': '1.953rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
+        '5xl': '3.052rem',
+        '6xl': '3.125rem',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
