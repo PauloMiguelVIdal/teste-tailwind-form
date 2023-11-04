@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-    <PaginaInicial></PaginaInicial>
+    <PaginaInicial className="w-[1440] h-[1024] bg-roxo"></PaginaInicial>
     <Pagina1 onAddInformações={onAddInformações}></Pagina1>
     <Pagina2 className="w-[1440] h-[1024] bg-white" ></Pagina2>
     </div>
