@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import CorpoPaginaInicial from "./CorpoPaginaInicial";
+import CorpoPaginaInicial from "./paginaInicial/CorpoPaginaInicial";
 function PaginaInicial(){
     return(
         <div className="bg-roxo w-full h-[1024px]">

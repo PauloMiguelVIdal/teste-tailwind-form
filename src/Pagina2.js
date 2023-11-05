@@ -8,7 +8,7 @@ function Pagina2(props) {
                 <div className="flex justify-center flex-col text-center z-1">
                     <h1 className="text-white/50 text-xl mt-24 pb-4">CARTÕES</h1>
                     <h3 className="text-white text-6xl mt36 pb-12">CARTÕES PARA ATENDER AS SUAS NECESSIDADES</h3>
-                    <div className="flex justify-center mt-24">
+                    <div className="flex justify-center mt-[52px]">
                         <Cartão1></Cartão1>
                         <Cartão2></Cartão2>
                     </div>

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import PaginaInicial from './PaginaInicial';
 import Pagina1 from './Pagina1';
 import Pagina2 from './Pagina2';
+import Pagina3 from './pagina3';
 
 function App() {
   const [informações, Setinformações] = useState([])
@@ -15,10 +16,13 @@ function App() {
   }
 
   return (
-    <div>
+    <div className=''>
     <PaginaInicial className="w-[1440] h-[1024] bg-roxo"></PaginaInicial>
+    <Pagina3 className="w-[1440px] h-[1024px]"></Pagina3>
+    <Pagina2 className="w-[1440px] h-[1024px]"></Pagina2>
     <Pagina1 onAddInformações={onAddInformações}></Pagina1>
-    <Pagina2 className="w-[1440] h-[1024] bg-white" ></Pagina2>
+  
+
     </div>
   );
 }

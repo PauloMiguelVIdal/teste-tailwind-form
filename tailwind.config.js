@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
+    // borderRadius: {
+    //   'none': '0',
+    //   'sm': '0.125rem',
+    //   'md': '0.375rem',
+    //   'lg': '0.5rem',
+    //   'full': '9999px',
+    //   '6xl': '40px'
+    // },
     extend: {
           colors: {
         'roxo': '#6411D9',
@@ -33,6 +41,7 @@ module.exports = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
+      
     },
   },
   plugins: [],
