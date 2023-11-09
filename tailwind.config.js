@@ -40,6 +40,10 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      rotate: {
+        '17': '17deg',
+        '27': '27deg',
       }
       
     },
