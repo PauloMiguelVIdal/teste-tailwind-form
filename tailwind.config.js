@@ -44,8 +44,8 @@ module.exports = {
       rotate: {
         '17': '17deg',
         '27': '27deg',
-      }
-      
+      },
+
     },
   },
   plugins: [],

@@ -21,8 +21,8 @@ function App() {
     <PaginaInicial className="w-[1440] h-[1024] bg-roxo"></PaginaInicial>
     <Pagina3 className="w-[1440px] h-[1024px]"></Pagina3>
     <Pagina2 className="w-[1440px] h-[1024px]"></Pagina2>
-    <Pagina4></Pagina4>
-  <Pagina5></Pagina5>
+    <Pagina4 className="w-[1440px] h-[1024px]"></Pagina4>
+  <Pagina5 className="w-[1440px] h-[1024px]"></Pagina5>
   <Pagina1 onAddInformações={onAddInformações}></Pagina1>
     </div>
   );

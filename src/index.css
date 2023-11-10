@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Inter:wght@600&family=Noto+Serif:ital,wght@1,700&family=Sora:wght@100;600&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Inter:wght@200;300;400;600&family=Noto+Serif:ital,wght@1,700&display=swap');
 .largura{
   width: calc(100vw - 15%);
 }
@@ -22,3 +20,16 @@
 }
 .box3{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;}
+
+.fonteBold{
+  font-family: 'Inter', sans-serif;
+  font-weight:700;
+}
+.fonteLight{
+  font-family: 'Inter', serif;
+  font-weight:300;
+}
+.fonteRegular{
+  font-family: 'Inter', serif;
+  font-weight:400;
+}
