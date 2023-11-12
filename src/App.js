@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className=''>
-    <PaginaInicial className="w-[1440] h-[1024] bg-roxo"></PaginaInicial>
+    <PaginaInicial className="w-[1440px] h-[1024] bg-roxo"></PaginaInicial>
     <Pagina3 className="w-[1440px] h-[1024px]"></Pagina3>
     <Pagina2 className="w-[1440px] h-[1024px]"></Pagina2>
     <Pagina4 className="w-[1440px] h-[1024px]"></Pagina4>
