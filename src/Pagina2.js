@@ -1,6 +1,6 @@
 import React from "react";
-import Cartão1 from "./Cartão1";
-import Cartão2 from "./Cartão2";
+import CartãoStandart from "./CartãoStandart";
+import CartãoBlack from "./CartãoBlack";
 function Pagina2(props) {
     return (
         <div className="w-full h-[64rem] bg-gradient-radial from-roxoForte to-marinho">
@@ -9,8 +9,8 @@ function Pagina2(props) {
                     {/* <h1 className="text-white/50 text-xl mt-24 pb-4">CARTÕES</h1> */}
                     <h3 className="text-white text-6xl mt-24 pb-12 fonteBold">CARTÕES PARA ATENDER AS SUAS NECESSIDADES</h3>
                     <div className="flex place-content-evenly mt-[70px]">
-                        <Cartão1></Cartão1>
-                        <Cartão2></Cartão2>
+                        <CartãoStandart></CartãoStandart>
+                        <CartãoBlack></CartãoBlack>
                     </div>
                 </div>
             </div>
