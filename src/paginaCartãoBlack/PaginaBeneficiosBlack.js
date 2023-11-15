@@ -8,8 +8,8 @@ import escudo from "./icon/escudo.png"
 
 function PaginaBeneficiosBlack() {
     return (
-        <div className="flex place-content-end flex-col w-full h-[1024px]">
-            <h1 className="text-center fonteBold text-roxo text-[60px] mt-[120px] mb-[120px]">BENEFÍCIOS EXCLUSIVOS</h1>
+        <div className="flex place-content-end flex-col w-full h-[1024px] mt-[120px]">
+            <h1 className="text-center fonteBold text-roxo text-[60px]  mb-[120px]">BENEFÍCIOS EXCLUSIVOS</h1>
             <div>
                 <div className="grid grid-rows-3 grid-cols-2 ">
                     <div className="flex place-content-end">
