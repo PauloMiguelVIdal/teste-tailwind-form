@@ -9,8 +9,8 @@ function Pagina2(props) {
                     {/* <h1 className="text-white/50 text-xl mt-24 pb-4">CARTÕES</h1> */}
                     <h3 className="text-white text-6xl mt-24 pb-12 fonteBold">CARTÕES PARA ATENDER AS SUAS NECESSIDADES</h3>
                     <div className="flex place-content-evenly mt-[70px]">
-                        <CartãoStandart></CartãoStandart>
-                        <CartãoBlack></CartãoBlack>
+                        <CartãoStandart className="hover:origin-center hover:rotate-12 transition-all box3"></CartãoStandart>
+                        <CartãoBlack className="hover:origin-center hover:rotate-12 transition-all box3"></CartãoBlack>
                     </div>
                 </div>
             </div>
