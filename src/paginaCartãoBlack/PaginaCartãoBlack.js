@@ -13,7 +13,7 @@ function PaginaCartãoBlack(){
     return(
         <div>
         <PaginaInicialCartãoBlack></PaginaInicialCartãoBlack>
-        <PaginaBemVindoBlack></PaginaBemVindoBlack>
+        <PaginaBemVindoBlack ></PaginaBemVindoBlack>
         <PaginaBeneficiosBlack></PaginaBeneficiosBlack>
         <PaginaRequisitosBlack></PaginaRequisitosBlack>
         <PaginaSolicitarCartãoBlack></PaginaSolicitarCartãoBlack>
