@@ -45,4 +45,25 @@ margin-top: -40px;
   font-family: 'Inter', serif;
   font-weight:400;
 }
+.linkTexto{
+  position: relative;
+  text-decoration: none;
+  color: aqua; /* Cor do texto */
+  overflow: hidden;
+}
 
+
+.linkTexto::before{
+  content: "";
+    position: absolute;
+    width: 0;
+    height:4px; /* Altura do sublinhado */
+    background-color: #F27405; /* Cor do sublinhado */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Adiciona uma transição à propriedade width */
+}
+
+.linkTexto:hover::before {
+  width: 100%; /* Expandir o sublinhado ao passar o mouse */
+}

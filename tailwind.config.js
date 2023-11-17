@@ -16,8 +16,8 @@ module.exports = {
         "roxoForte": "#331B8C", 
         'marinho': '#1A1246',
         'laranja': '#F27405',
-        'laranjaFraco': '#FF8F2D'
-        
+        'laranjaFraco': '#FF8F2D',
+        'laranjaSuperFraco': '#FFF1E4'
       },
       width: {
         '450': '450px',

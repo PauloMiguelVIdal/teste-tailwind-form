@@ -26,7 +26,12 @@ function PaginaFAQsBlack() {
                 </div>
             </div>
             </div>
-            <h4 className="text-[40px] mt-[115px] text-laranja fonteBold ml-[100px]">Encontre Respostas</h4>
+          
+           
+            <a href="./PaginaSemTaxaCartãoBlack.js" className="">
+            <h4 className="text-[40px] mt-[115px] text-laranja fonteBold ml-[100px] decoration-0 hover:decoration-1 hover:underline-2">Encontre Respostas</h4>
+            </a>
+           
         </div>
     )
 }
