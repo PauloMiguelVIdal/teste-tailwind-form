@@ -8,7 +8,7 @@ import PaginaSemTaxaCartãoBlack from "./PaginaSemTaxaCartãoBlack"
 import PaginaFAQsBlack from "./PaginaFAQsBlack"
 import PaginaDepoimentosBlack from "./PaginaDepoimentosBlack"
 import PaginaSuporteBlack from "./PaginaSuporteBlack"
-
+import { DefaultAccordion } from "./TesteAcoodion";
 function PaginaCartãoBlack(){
     return(
         <div>
@@ -21,6 +21,7 @@ function PaginaCartãoBlack(){
         <PaginaFAQsBlack></PaginaFAQsBlack>
         <PaginaDepoimentosBlack></PaginaDepoimentosBlack>
         <PaginaSuporteBlack></PaginaSuporteBlack>
+        {/* <DefaultAccordion></DefaultAccordion> */}
         </div>
     )
 }
