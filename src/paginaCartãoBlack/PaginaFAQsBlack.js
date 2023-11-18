@@ -26,12 +26,12 @@ function PaginaFAQsBlack() {
                 </div>
             </div>
             </div>
-          
-           
-            <a href="./PaginaSemTaxaCartãoBlack.js" className="">
-            <h4 className="text-[40px] mt-[115px] text-laranja fonteBold ml-[100px] decoration-0 hover:decoration-1 hover:underline-2">Encontre Respostas</h4>
+            
+            <button className="linkTexto mt-[115px]  ml-[100px]">
+                <a href="teste" className="">
+            <h4 className="text-[40px]  text-laranja fonteBold ">Encontre Respostas</h4>
             </a>
-           
+           </button>
         </div>
     )
 }

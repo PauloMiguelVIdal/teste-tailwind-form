@@ -16,11 +16,11 @@ function PaginaCartãoBlack(){
         <PaginaBemVindoBlack ></PaginaBemVindoBlack>
         <PaginaBeneficiosBlack></PaginaBeneficiosBlack>
         <PaginaRequisitosBlack></PaginaRequisitosBlack>
-        {/* <PaginaSolicitarCartãoBlack></PaginaSolicitarCartãoBlack> */}
-        {/* <PaginaSemTaxaCartãoBlack></PaginaSemTaxaCartãoBlack> */}
-        {/* <PaginaFAQsBlack></PaginaFAQsBlack> */}
-        {/* <PaginaDepoimentosBlack></PaginaDepoimentosBlack> */}
-        {/* <PaginaSuporteBlack></PaginaSuporteBlack> */}
+        <PaginaSolicitarCartãoBlack></PaginaSolicitarCartãoBlack>
+        <PaginaSemTaxaCartãoBlack></PaginaSemTaxaCartãoBlack>
+        <PaginaFAQsBlack></PaginaFAQsBlack>
+        <PaginaDepoimentosBlack></PaginaDepoimentosBlack>
+        <PaginaSuporteBlack></PaginaSuporteBlack>
         </div>
     )
 }
