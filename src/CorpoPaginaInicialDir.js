@@ -1,5 +1,5 @@
 import React from "react";
-import mulher from "./icon/mulher celular.png"
+import mulher from "./imagens/mulher celular.png"
 function CorpoPaginaInicialDir(){
 return(
     <div className="">        

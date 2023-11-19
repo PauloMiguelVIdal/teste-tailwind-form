@@ -1,8 +1,8 @@
 import React from "react";
-import tecnologia from "./icon/tenologia.png"
-import criptomoeda from "./icon/criptomoeda.png"
-import segurança from "./icon/escudo.png"
-import inovação from "./icon/inovacao.png"
+import tecnologia from "../src/iconesPaginaInicial/tenologia.png"
+import criptomoeda from "../src/iconesPaginaInicial/criptomoeda.png"
+import segurança from "../src/iconesPaginaInicial/escudo.png"
+import inovação from "../src/iconesPaginaInicial/inovacao.png"
 function ContainerFundamentos() {
     return (
         <div className="grid grid-rows-2 grid-cols-2 gap-[50px] mt-20 text-white text-3xl fonteLight">

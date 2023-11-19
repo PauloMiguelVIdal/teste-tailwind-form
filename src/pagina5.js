@@ -1,5 +1,5 @@
 import React from "react";
-import Obcoin from "./image/OBCOIN svg.svg"
+import Obcoin from "./Logo/OBCOIN svg.svg"
 function Pagina5(){
     return(
         <section className="bg-white w-full h-[1024px] ">

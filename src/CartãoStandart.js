@@ -1,6 +1,6 @@
 import React from "react";
 import chip from "./image/chip-de-cartao-de-credito (1).png"
-import obcoin from "./image/OBCOIN svg.svg"
+import obcoin from "./Logo/OBCOIN svg.svg"
 import InfoCartão from "./InfoCartão";
 
 function CartãoStandart() {

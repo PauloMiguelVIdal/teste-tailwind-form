@@ -1,44 +1,25 @@
-import React from "react";
-import setaDireita from "./icon/seta-direita.png"
-function PaginaFAQsBlack() {
+import React, { useState } from "react";
+
+function PaginaFAQsBlack(){
     return (
-
-
-
-
-
-        <div>
-            <h1 className="text-center text-[60px] fonteBold text-roxo mt-[115px] mb-[115px]">FAQS</h1>
-            <div className="flex justify-center flex-col items-center">
-            <div className="w-[1200px] h-[83px] bg-roxo rounded-[20px] mb-[55px]">
-                <div className="w-[1200px] h-[80px] bg-roxoForte rounded-[20px] flex flex-row place-content-between items-center">
-                    <h2 className="text-white fonteBold text-[30px] ml-[25px]">Quanto tempo leva para processar minha solicitação?</h2><img img width={40} heigth={40} src={setaDireita} className="mr-[25px]"></img>
-                </div>
-                    <p>Normalmente, a análise de solicitações leva cerca de 3 dias úteis. Esse prazo permite que realizemos uma análise detalhada do perfil do cliente e avaliemos o cumprimento dos requisitos estabelecidos. Estamos comprometidos em fornecer uma resposta rápida e eficiente aos nossos clientes dentro desse período.</p>
+        <div className="w-full h-[1024px] flex justify-center items-center flex-col">
+            <h1 className="text-center text-[60px] fonteBold text-roxo mt-[115px] mb-[100px]">FAQS</h1>
+            <div className="flex justify-center items-center flex-col m-auto " >
+            <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center">
+                <input type="text" placeholder="Nome completo" className="z-50 text-[25px] fonteBold w-[470px] pl-[10px] h-[60px] bg-roxo bg-opacity-20 rounded-[17.50px] "></input>
             </div>
-            <div className="w-[1200px] h-[83px] bg-roxo rounded-[20px] mb-[55px]">
-                <div className="w-[1200px] h-[80px] bg-roxoForte rounded-[20px] flex flex-row place-content-between items-center">
-                    <h2 className="text-white fonteBold text-[30px] ml-[25px]">Quanto tempo leva para processar minha solicitação?</h2><img img width={40} heigth={40} src={setaDireita} className="mr-[25px]"></img>
+            <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center mt-[17px]">
+                <input type="text" placeholder="Email" className="z-50 text-[25px] fonteBold w-[470px] pl-[10px] h-[60px] bg-roxo bg-opacity-20 rounded-[17.50px] "></input>
+            </div>
+            <div className=" w-[500px] h-[300px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center mt-[17px] text-start">
+                <div className="flex items-start">
+                <input type="text" placeholder="Sua dúvida" className="z-50 text-[25px] fonteBold w-[470px] pb-[200px] pl-[10px] h-[270px] bg-roxo bg-opacity-20 rounded-[17.50px] text-left flex items-start"></input>
                 </div>
             </div>
-            <div className="w-[1200px] h-[83px] bg-roxo rounded-[20px] mb-[55px]">
-                <div className="w-[1200px] h-[80px] bg-roxoForte rounded-[20px] flex flex-row place-content-between items-center">
-                    <h2 className="text-white fonteBold text-[30px] ml-[25px]">Quanto tempo leva para processar minha solicitação?</h2><img img width={40} heigth={40} src={setaDireita} className="mr-[25px]"></img>
-                </div>
-            </div>
-            <div className="w-[1200px] h-[83px] bg-roxo rounded-[20px]">
-                <div className="w-[1200px] h-[80px] bg-roxoForte rounded-[20px] flex flex-row place-content-between items-center">
-                    <h2 className="text-white fonteBold text-[30px] ml-[25px]">Quanto tempo leva para processar minha solicitação?</h2><img img width={40} heigth={40} src={setaDireita} className="mr-[25px]"></img>
-                </div>
-            </div>
-            </div>
-            
-            <button className="linkTexto mt-[115px]  ml-[100px]">
-                <a href="teste" className="">
-            <h4 className="text-[40px]  text-laranja fonteBold ">Encontre Respostas</h4>
-            </a>
-           </button>
+            <button className="w-[500px] h-[60px] text-[20px] fonteBold bg-roxo rounded-[20px] text-white mt-[30px] mb-[180px] z-50">Solicitar agora</button>
+        </div>
         </div>
     )
 }
+
 export default PaginaFAQsBlack

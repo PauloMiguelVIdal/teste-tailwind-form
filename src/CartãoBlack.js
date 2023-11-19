@@ -1,7 +1,7 @@
 import React from "react";
 import InfoCartão from "./InfoCartão";
 import chip from "./image/chip-de-cartao-de-credito (1).png"
-import obcoin from "./image/OBCOIN svg.svg"
+import obcoin from "./Logo/OBCOIN svg.svg"
 function CartãoBlack(){
     return(
         <div className="origin-center flex justify-center items-center flex-col w-110 h-[37.5rem] bg-gradient-to-br from-black from-35% to-roxoForte to-65% rounded-[40px] ml-10">

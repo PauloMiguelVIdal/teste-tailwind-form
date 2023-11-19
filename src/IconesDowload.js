@@ -1,6 +1,6 @@
 import React from "react";
-import googlePlay from "./icon/google-play-badge-logo-svgrepo-com.svg"
-import appStore from "./icon/App_Store_(iOS)-Badge-Logo.wine.svg"
+import googlePlay from "../src/IconDowloadApp/google-play-badge-logo-svgrepo-com.svg"
+import appStore from "../src/IconDowloadApp/App_Store_(iOS)-Badge-Logo.wine.svg"
 function IconesDowload(){
     return(
         <div className="flex flex-col items-start ml-[200px]">

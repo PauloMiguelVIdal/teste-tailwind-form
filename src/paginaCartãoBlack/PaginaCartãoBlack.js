@@ -1,14 +1,18 @@
 import React from "react";
-import PaginaInicialCartãoBlack from "./paginaInicialCartãoBlack/PaginaInicialCartãoBlack"
+import PaginaInicialCartãoBlack from "./icon/PaginaCartãoBlack/paginaInicialCartãoBlack/PaginaInicialCartãoBlack"
 import PaginaBemVindoBlack from "./PaginaBemVindoBlack"
 import PaginaBeneficiosBlack from "./PaginaBeneficiosBlack"
 import PaginaRequisitosBlack from "./PaginaRequisitosBlack"
 import PaginaSolicitarCartãoBlack from "./PaginaSolicitarCartãoBlack"
+import PaginaSolicitarCartãoBlackResposta from "./PaginaSolicitarCartãoBlackResposta";
 import PaginaSemTaxaCartãoBlack from "./PaginaSemTaxaCartãoBlack"
 import PaginaFAQsBlack from "./PaginaFAQsBlack"
+import PaginaFAQsBlackResposta from "./PaginaFAQsBlackResposta"
 import PaginaDepoimentosBlack from "./PaginaDepoimentosBlack"
 import PaginaSuporteBlack from "./PaginaSuporteBlack"
-import { DefaultAccordion } from "./TesteAcoodion";
+import FormularioBlack from "./FormularioBlack";
+import FormularioBlackResposta from "./FormularioBlackResposta";
+
 function PaginaCartãoBlack(){
     return(
         <div>
@@ -17,11 +21,15 @@ function PaginaCartãoBlack(){
         <PaginaBeneficiosBlack></PaginaBeneficiosBlack>
         <PaginaRequisitosBlack></PaginaRequisitosBlack>
         <PaginaSolicitarCartãoBlack></PaginaSolicitarCartãoBlack>
+        <FormularioBlack></FormularioBlack>
+        <PaginaSolicitarCartãoBlackResposta></PaginaSolicitarCartãoBlackResposta>
+        <FormularioBlackResposta></FormularioBlackResposta>
         <PaginaSemTaxaCartãoBlack></PaginaSemTaxaCartãoBlack>
         <PaginaFAQsBlack></PaginaFAQsBlack>
+        <PaginaFAQsBlackResposta></PaginaFAQsBlackResposta>
         <PaginaDepoimentosBlack></PaginaDepoimentosBlack>
         <PaginaSuporteBlack></PaginaSuporteBlack>
-        {/* <DefaultAccordion></DefaultAccordion> */}
+       
         </div>
     )
 }
