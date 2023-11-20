@@ -1,6 +1,6 @@
 import React from "react";
-import CartãoBlackS from "./image/CARTÃO black s-nome.svg"
-import CartãoStandartS from "./image/CARTÃO standart s-nome.svg"
+import CartãoBlackS from "../src/ComponentesUniversais/Cartões/CartõesSvg/CARTÃO black s-nome.svg"
+import CartãoStandartS from "../src/ComponentesUniversais/Cartões/CartõesSvg/CARTÃO standart s-nome.svg"
 function CartõesSuspensos(){
     return(
         <div className="">
