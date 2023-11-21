@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Informações from './informações';
 import { useState } from 'react';
-import PaginaInicial from './PaginaInicial';
+import PaginaInicial from '../src/paginaInicial/PaginaInicial';
 
 import PaginaCartãoBlack from './paginaCartãoBlack/PaginaCartãoBlack';
 import PaginaBemVindoBlack from './paginaCartãoBlack/PaginaBemVindoBlack';

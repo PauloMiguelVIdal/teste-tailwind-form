@@ -1,5 +1,5 @@
 import React from "react";
-import PaginaInicialCartãoBlack from "./icon/PaginaCartãoBlack/paginaInicialCartãoBlack/PaginaInicialCartãoBlack"
+import PaginaInicialCartãoBlack from "./telaInicialCartãoBlack/PaginaInicialCartãoBlack"
 import PaginaBemVindoBlack from "./PaginaBemVindoBlack"
 import PaginaBeneficiosBlack from "./PaginaBeneficiosBlack"
 import PaginaRequisitosBlack from "./PaginaRequisitosBlack"
