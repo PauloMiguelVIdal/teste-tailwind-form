@@ -3,9 +3,7 @@ import './App.css';
 import Informações from './informações';
 import { useState } from 'react';
 import PaginaInicial from '../src/paginaInicial/PaginaInicial';
-
 import PaginaCartãoBlack from './paginaCartãoBlack/PaginaCartãoBlack';
-import PaginaBemVindoBlack from './paginaCartãoBlack/PaginaBemVindoBlack';
 function App() {
   const [informações, Setinformações] = useState([])
 
