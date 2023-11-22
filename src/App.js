@@ -17,7 +17,6 @@ function App() {
   return (
     <div>
     <PaginaInicial className = "w-screen h-[1024] bg-roxo" ></PaginaInicial >
-
   <PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>
     </div >
   );
