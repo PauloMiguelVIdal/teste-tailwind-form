@@ -28,7 +28,7 @@ margin-top: -40px;
 }
 
 .box4{
-  /* box-shadow: rgba(51, 27, 140, 0.4) 5px 5px, rgba(51, 27, 140, 0.3) 10px 10px, rgba(51, 27, 140, 0.2) 15px 15px, rgba(51, 27, 140, 0.1) 20px 20px, rgba(51, 27, 140, 0.05) 25px 25px; */
+  box-shadow: rgba(51, 27, 140, 0.4) 5px 5px, rgba(51, 27, 140, 0.3) 10px 10px, rgba(51, 27, 140, 0.2) 15px 15px, rgba(51, 27, 140, 0.1) 20px 20px, rgba(51, 27, 140, 0.05) 25px 25px;
   border-radius: 360px;
 }
 
