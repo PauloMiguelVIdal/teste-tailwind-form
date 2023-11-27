@@ -12,7 +12,7 @@ import PaginaDepoimentosCartãoBlack from "./PaginaDepoimentosCartãoBlack/Pagin
 import PaginaSuporteBlack from "./PaginaSuporteBlack/PaginaSuporteBlack"
 import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack";
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
-
+import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
     return(
         <div>
@@ -29,7 +29,7 @@ function PaginaCartãoBlack(){
         <PaginaFAQsResposta></PaginaFAQsResposta>
         <PaginaDepoimentosCartãoBlack></PaginaDepoimentosCartãoBlack>
         <PaginaSuporteBlack></PaginaSuporteBlack>
-       
+        <Footer className="w-full h-[1024px]"></Footer>
         </div>
     )
 }
