@@ -9,19 +9,19 @@ import PaginaTodosOsBenefíciosCartãoBlack from './paginaBenefíciosCartãoBlac
 import PaginaTodosOsBenefíciosCartãoStandart from './paginaBenefíciosCartãoStandart/PaginaBenefíciosCartãoStandart';
 import PaginaCriptomoeda from "./paginaCriptomoeda/PaginaCriptomoeda"
 import PaginaCultura from './paginaCultura/PaginaCultura';
-import PaginaCartão from "./paginaCartão/PaginaCartão"
+import TelaInicialCartão from './paginaCartão/TelaInicialCartão/TelaInicialCartão'; 
 function App() {
 
   return (
     <div>
-      {/* <PaginaInicial className="w-screen h-[1024] bg-roxo" ></PaginaInicial >
-      <PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>
+      {/* <PaginaInicial className="w-screen h-[1024] bg-roxo" ></PaginaInicial > */}
+      {/* <PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack> */}
       <PaginaCartãoStandart className="w-[1440px] h-[1024px]"></PaginaCartãoStandart>
-      <PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"></PaginaTodosOsBenefíciosCartãoBlack>
+      {/* <PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"></PaginaTodosOsBenefíciosCartãoBlack>
       <PaginaTodosOsBenefíciosCartãoStandart className="w-[1440px] h-[1024px]"></PaginaTodosOsBenefíciosCartãoStandart>
       <PaginaCriptomoeda className="w-[1440px] h-[1024px]"></PaginaCriptomoeda>
-      <PaginaCultura></PaginaCultura> */}
-      <PaginaCartão></PaginaCartão>
+      <PaginaCultura></PaginaCultura>
+      <TelaInicialCartão></TelaInicialCartão>  */}
     </div >
   );
 }
