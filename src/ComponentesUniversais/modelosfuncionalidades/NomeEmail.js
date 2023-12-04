@@ -1,7 +1,7 @@
 import React from "react";
 import NomeCompleto from "../funcionalidades/NomeCompleto";
 import { CentraldeDadosProvider } from "../CentralDeDados";
-import { Email, handleAtualizarEmail } from "../funcionalidades/Email";
+import Email from "../funcionalidades/Email";
 function NomeEmail() {
     return (
         <CentraldeDadosProvider>

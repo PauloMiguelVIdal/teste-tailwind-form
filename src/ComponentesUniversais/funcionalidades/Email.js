@@ -11,7 +11,7 @@ let t = event.target.value
 setNovoEmail(t)
 }
 
-const atualizarContexto = ()=>{
+ function atualizarContexto(){
     atualizarDadosEmail(novoEmail)
 }
 
@@ -27,11 +27,11 @@ const atualizarContexto = ()=>{
 
             
             />
-<button on onClick={atualizarContexto}>teste</button>
+<button onClick={atualizarContexto}>teste</button>
         </div>
     );
 };
 
 
 
-export default Email
+export {Email, atualizarContexto} 

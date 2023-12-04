@@ -1,6 +1,6 @@
 import React from "react";
 import NomeCompleto from "../funcionalidades/NomeCompleto";
-import {Email,handleAtualizarEmail} from "../funcionalidades/Email";
+import Email from "../funcionalidades/Email";
 import DúvidaEmail from "../funcionalidades/DúvidaEmail";
 function FormFAQS(){
     return(
