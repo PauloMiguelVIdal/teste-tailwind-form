@@ -3,8 +3,7 @@ import { CentraldeDadosContext } from "../CentralDeDados";
 
 function Email() {
     const { dadosEmail, AtualizarDadosEmail } = useContext(CentraldeDadosContext);
-
-
+    
 const [novoEmail, setNovoEmail] = useState('');
 function handleChange(event){
 let t = event.target.value

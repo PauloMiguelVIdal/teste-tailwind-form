@@ -6,7 +6,6 @@ function PaginaFAQs() {
             <h1 className="text-center text-[60px] fonteBold text-roxo mt-[115px] mb-[100px]">FAQS</h1>
             <div className="flex justify-center items-center flex-col m-auto " >
                 <FormFAQS></FormFAQS>
-                
             </div>
         </div>
     )
