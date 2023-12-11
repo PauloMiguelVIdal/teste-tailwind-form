@@ -10,7 +10,7 @@ import PaginaTodosOsBenefíciosCartãoStandart from './paginaBenefíciosCartãoS
 import PaginaCriptomoeda from "./paginaCriptomoeda/PaginaCriptomoeda"
 import PaginaCultura from './paginaCultura/PaginaCultura';
 import TelaInicialCartão from './paginaCartão/TelaInicialCartão/TelaInicialCartão'; 
-import { CentraldeDadosProvider } from './ComponentesUniversais/CentralDeDados';
+import { CentraldeDadosProvider } from './ComponentesUniversais/CentralDeDadosContext';
 
 
 

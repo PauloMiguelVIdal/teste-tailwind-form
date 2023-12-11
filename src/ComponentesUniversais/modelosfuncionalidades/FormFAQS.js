@@ -2,7 +2,7 @@ import React from "react";
 import NomeCompleto from "../funcionalidades/NomeCompleto";
 import {Email} from "../funcionalidades/Email";
 import DúvidaEmail from "../funcionalidades/DúvidaEmail";
-import { CentraldeDadosContext } from "../CentralDeDados";
+import { CentraldeDadosContext } from "../CentralDeDadosContext";
 import { useContext,useState } from "react";
 function FormFAQS(){
     const { dadosEmail, atualizarDadosEmail } = useContext(CentraldeDadosContext);

@@ -1,6 +1,6 @@
 import React, { useContext,useState } from "react";
 import NomeCompleto from "../funcionalidades/NomeCompleto";
-import { CentraldeDadosProvider,  CentraldeDadosContext  } from "../CentralDeDados";
+import { CentraldeDadosProvider,  CentraldeDadosContext  } from "../CentralDeDadosContext";
 import {Email} from "../funcionalidades/Email";
 
 function NomeEmail() {
@@ -8,12 +8,15 @@ function NomeEmail() {
     const [novoEmail, setNovoEmail] = useState('');
 
 
-    function handleChange(event){
+    function handleChangeEmail(event){
         setNovoEmail(event.target.value)
     }
 
     function atualizarContexto(){
-        AtualizarDadosEmail(novoEmail)
+        Email.AtualizarDadosEmail()
+        // AtualizarDadosEmail(novoEmail)
+        // console.log(novoEmail)
+        console.log()
     }
 
     return (
@@ -22,7 +25,7 @@ function NomeEmail() {
                 <NomeCompleto ></NomeCompleto>
             </div>
             <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center mt-[17px]">
-                <Email handleChange={handleChange} novoEmail={novoEmail}></Email>
+                <Email handleChange={handleChangeEmail} novoEmail={novoEmail}></Email>
             </div>
             <button onClick={atualizarContexto} className="w-[500px] h-[60px] text-[20px] fonteBold bg-laranja rounded-[20px] text-white mt-[30px] z-50">Solicitar agora</button>
         </div>
