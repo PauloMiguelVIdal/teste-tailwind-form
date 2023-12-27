@@ -1,5 +1,4 @@
 import React from "react";
-import NomeCompleto from "../funcionalidades/NomeCompleto";
 import {Email} from "../funcionalidades/Email";
 import DúvidaEmail from "../funcionalidades/DúvidaEmail";
 import { CentraldeDadosContext } from "../CentralDeDadosContext";
@@ -19,7 +18,7 @@ function FormFAQS(){
     return(
         <div>
                 <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center">
-                    <NomeCompleto></NomeCompleto>
+                    
                 </div>
                 <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center mt-[17px] ">
                     <Email handleChange={handleChange} novoEmail={novoEmail}></Email>
@@ -33,3 +32,5 @@ function FormFAQS(){
 }
 
 export default FormFAQS
+
+//continuar teste
