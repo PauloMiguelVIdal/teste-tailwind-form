@@ -30,7 +30,7 @@ function NomeEmail() {
         AtualizarDadosEmail(novoEmail)
     }
     if (novoNome) {
-        AtualizarDadosEmail(novoNome)
+        AtualizarDadosNome(novoNome)
     }
     return (
         <div className="flex justify-center items-center flex-col w-[600px] h-[400px] rounded-[40px] border-laranja border-[2px] m-auto " >
