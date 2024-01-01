@@ -17,21 +17,23 @@ function NomeEmail() {
         setNovoNome(event.target.value)
     }
 
+
+
     function atualizarContexto() {
-        AtualizarDadosEmail(novoEmail)
+        if (novoEmail) {
+            AtualizarDadosEmail(novoEmail)
+        }
+        if (novoNome) {
+            AtualizarDadosNome(novoNome)
+        }
         console.log(novoEmail)
         console.log(dadosEmail)
-        AtualizarDadosNome(novoNome)
+   
         console.log(novoNome)
         console.log(dadosNome)
     }
 
-    if (novoEmail) {
-        AtualizarDadosEmail(novoEmail)
-    }
-    if (novoNome) {
-        AtualizarDadosNome(novoNome)
-    }
+
     return (
         <div className="flex justify-center items-center flex-col w-[600px] h-[400px] rounded-[40px] border-laranja border-[2px] m-auto " >
             <div className=" w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center">
