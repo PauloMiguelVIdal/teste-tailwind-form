@@ -1,31 +1,56 @@
+import React, { useState, createContext, useEffect } from 'react';
 
-import { useState, createContext} from 'react';
-
-const CentraldeDadosContext = createContext()
+const CentraldeDadosContext = createContext();
 
 const CentraldeDadosProvider = ({ children }) => {
-  const [dadosNome, setDadosNome] = useState("")
-  const [dadosEmail, setDadosEmail] = useState("")
-  const [assuntoEmail, setAssuntoEmail] = useState("")
+  const [dadosNome, setDadosNome] = useState("");
+  const [dadosEmail, setDadosEmail] = useState("");
+  const [assuntoEmail, setAssuntoEmail] = useState("");
+  const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
+
+  const nomes = dadosNome.split(" ");
+  const doisPrimeirosNomes = nomes.slice(0, 2).join(" ");
+
+  useEffect(() => {
+    // Atualiza dadosPrimeirosNome sempre que dadosNome muda
+    const novosNomes = dadosNome.split(" ");
+    const novosDoisPrimeirosNomes = novosNomes.slice(0, 2).join(" ");
+    setDadosPrimeirosNome(novosDoisPrimeirosNomes);
+  }, [dadosNome]);
+
+  const AtualizarPrimeiroNome = (novosDadosPrimeirosNome) => {
+    setDadosPrimeirosNome(novosDadosPrimeirosNome);
+  };
 
   const AtualizarDadosEmail = (novosDadosEmail) => {
-    setDadosEmail(novosDadosEmail)
-  }
+    setDadosEmail(novosDadosEmail);
+  };
 
   const AtualizarDadosNome = (novosDadosNome) => {
-    setDadosNome(novosDadosNome)
-  }
+    setDadosNome(novosDadosNome);
+  };
 
   const AtualizarAssuntoEmail = (novosDadosAssuntoEmail) => {
-    setAssuntoEmail(novosDadosAssuntoEmail)
-  }
+    setAssuntoEmail(novosDadosAssuntoEmail);
+  };
 
-  return(
-    <CentraldeDadosContext.Provider value={{dadosNome,AtualizarDadosNome,setDadosNome,dadosEmail, AtualizarDadosEmail,setDadosEmail,assuntoEmail,setAssuntoEmail,AtualizarAssuntoEmail }}>
+  return (
+    <CentraldeDadosContext.Provider value={{
+      dadosNome,
+      AtualizarDadosNome,
+      setDadosNome,
+      dadosEmail,
+      AtualizarDadosEmail,
+      setDadosEmail,
+      assuntoEmail,
+      setAssuntoEmail,
+      AtualizarAssuntoEmail,
+      doisPrimeirosNomes,
+      AtualizarPrimeiroNome,
+    }}>
       {children}
     </CentraldeDadosContext.Provider>
-  )
-}
+  );
+};
 
-export {CentraldeDadosContext, CentraldeDadosProvider }
-
+export { CentraldeDadosContext, CentraldeDadosProvider };

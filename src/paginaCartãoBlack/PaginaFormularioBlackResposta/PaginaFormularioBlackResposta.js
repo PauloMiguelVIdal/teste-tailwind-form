@@ -5,7 +5,7 @@ import { CentraldeDadosContext } from "../../ComponentesUniversais/CentralDeDado
 
 
 function PaginaFormularioBlackResposta(){
-    const { dadosNome} = useContext(CentraldeDadosContext);
+    const {dadosNome} = useContext(CentraldeDadosContext);
     return(
         <div className="w-full h-[1024px] bg-gradient-to-b from-roxoForte to-black">
             <h1 className="text-laranja text-[100px] text-center fonteBold pt-[0px] relative z-10 mb-[70px]">Olá, {dadosNome}</h1>
