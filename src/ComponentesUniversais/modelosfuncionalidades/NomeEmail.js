@@ -8,7 +8,6 @@ function NomeEmail() {
     const { dadosNome, AtualizarDadosNome } = useContext(CentraldeDadosContext);
     const [novoNome, setNovoNome] = useState('');
 
-
     function handleChangeEmail(event) {
         setNovoEmail(event.target.value)
     }

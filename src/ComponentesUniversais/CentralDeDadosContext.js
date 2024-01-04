@@ -14,8 +14,8 @@ const CentraldeDadosProvider = ({ children }) => {
   useEffect(() => {
     // Atualiza dadosPrimeirosNome sempre que dadosNome muda
     const novosNomes = dadosNome.split(" ");
-    const novosDoisPrimeirosNomes = novosNomes.slice(0, 2).join(" ");
-    setDadosPrimeirosNome(novosDoisPrimeirosNomes);
+    const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ");
+    setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
 
   const AtualizarPrimeiroNome = (novosDadosPrimeirosNome) => {
@@ -33,6 +33,8 @@ const CentraldeDadosProvider = ({ children }) => {
   const AtualizarAssuntoEmail = (novosDadosAssuntoEmail) => {
     setAssuntoEmail(novosDadosAssuntoEmail);
   };
+
+  console.log("Contexto - dadosPrimeirosNome:", dadosPrimeirosNome);
 
   return (
     <CentraldeDadosContext.Provider value={{
