@@ -18,7 +18,7 @@ const CentraldeDadosProvider = ({ children }) => {
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
 
-  const AtualizarPrimeiroNome = (novosDadosPrimeirosNome) => {
+  const AtualizarDadosPrimeiroNome = (novosDadosPrimeirosNome) => {
     setDadosPrimeirosNome(novosDadosPrimeirosNome);
   };
 
@@ -48,7 +48,7 @@ const CentraldeDadosProvider = ({ children }) => {
       setAssuntoEmail,
       AtualizarAssuntoEmail,
       doisPrimeirosNomes,
-      AtualizarPrimeiroNome,
+      AtualizarDadosPrimeiroNome,
     }}>
       {children}
     </CentraldeDadosContext.Provider>

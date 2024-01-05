@@ -5,21 +5,12 @@ import { CentraldeDadosContext } from "../../ComponentesUniversais/CentralDeDado
 
 
 function PaginaFormularioBlackResposta() {
-    const { dadosPrimeirosNome, AtualizarPrimeiroNome } = useContext(CentraldeDadosContext);
-    useEffect(() => {
-        // Aqui você pode realizar qualquer lógica adicional necessária
-        console.log("Dados Primeiros Nome:", dadosPrimeirosNome);
-    }, [dadosPrimeirosNome]);
 
-      // Adiando a renderização condicional
-  if (dadosPrimeirosNome === null || dadosPrimeirosNome === undefined) {
-    console.log(null) ; // Ou uma mensagem de carregamento, se desejar
-  }
-
+    const {dadosNome } = useContext(CentraldeDadosContext);
 
     return (
         <div className="w-full h-[1024px] bg-gradient-to-b from-roxoForte to-black">
-            <h1 className="text-laranja text-[100px] text-center fonteBold pt-[0px] relative z-10 mb-[70px]">Olá, {dadosPrimeirosNome}</h1>
+            <h1 className="text-laranja text-[100px] text-center fonteBold pt-[0px] relative z-10 mb-[70px]">Olá, {dadosNome}</h1>
             <h2 className="text-[40px] text-roxo text-center fonteBold mb-[50px]">Solicitação realizada com sucesso</h2>
             <h4 className="text-center text-[40px] text-white fonteLight">A partir de agora, nossos especialistas <br /> estarão revisando cuidadosamente seu <br /> perfil para verificar se você atende a todos <br /> os requisitos necessários. Aguardamos a <br /> oportunidade de entrar em contato via <br />e-mail dentro do prazo de 3 dias<br /> úteis, fornecendo informações adicionais<br /> sobre o processo.</h4>
             <div>

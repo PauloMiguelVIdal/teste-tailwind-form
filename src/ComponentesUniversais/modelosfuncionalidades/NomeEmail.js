@@ -25,6 +25,7 @@ function NomeEmail() {
         if (novoNome) {
             AtualizarDadosNome(novoNome)
         }
+
         console.log(novoEmail)
         console.log(dadosEmail)
    
