@@ -1,5 +1,4 @@
 import React from "react";
-import DúvidaEmail from "../funcionalidades/DúvidaEmail";
 import { CentraldeDadosContext } from "../CentralDeDadosContext";
 import { useContext, useState } from "react";
 function FormFAQS() {
@@ -9,6 +8,9 @@ function FormFAQS() {
     const { dadosNome, AtualizarDadosNome } = useContext(CentraldeDadosContext);
     const [novoNome, setNovoNome] = useState('');
 
+    const { dadosDúvida, AtualizarDadosDúvida } = useContext(CentraldeDadosContext);
+    const [novaDúvida, setNovaDúvida] = useState('');
+
     function handleChangeEmail(event) {
         setNovoEmail(event.target.value)
     }
@@ -17,6 +19,9 @@ function FormFAQS() {
         setNovoNome(event.target.value)
     }
 
+    function handleChangeDúvida(event) {
+        setNovaDúvida(event.target.value)
+    }
 
 
     function atualizarContexto() {
@@ -27,8 +32,12 @@ function FormFAQS() {
             AtualizarDadosNome(novoNome)
         }
 
+        if(novaDúvida){
+            AtualizarDadosDúvida(novaDúvida)
+        }
         console.log(novoEmail)
         console.log(dadosEmail)
+        console.log(dadosDúvida)
    
         console.log(novoNome)
         console.log(dadosNome)
@@ -56,7 +65,12 @@ function FormFAQS() {
             <div className=" w-[500px] h-[300px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center mt-[17px] text-start">
                 <div>
                     <div className="flex items-start">
-                        <input type="text" placeholder="Sua dúvida" className=" placeholder:text-white placeholder:opacity-70 z-50 text-[25px] fonteBold w-[470px] pb-[200px] pl-[10px] h-[270px] bg-roxo bg-opacity-20 rounded-[17.50px] text-left flex items-start"></input>
+                        <input 
+                        type="text"
+                        placeholder="Sua dúvida"
+                        onChange={handleChangeDúvida}
+                        value={novaDúvida}
+                        className=" placeholder:text-white placeholder:opacity-70 z-50 text-[25px] fonteBold w-[470px] pb-[200px] pl-[10px] h-[270px] bg-roxo bg-opacity-20 rounded-[17.50px] text-left flex items-start"></input>
                     </div>
                 </div>
             </div>

@@ -6,7 +6,9 @@ const CentraldeDadosProvider = ({ children }) => {
   const [dadosNome, setDadosNome] = useState("");
   const [dadosEmail, setDadosEmail] = useState("");
   const [assuntoEmail, setAssuntoEmail] = useState("");
+  const [dadosDúvida, setDadosDúvida] = useState("");
   const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
+
 
   const nomes = dadosNome.split(" ");
   const doisPrimeirosNomes = nomes.slice(0, 2).join(" ");
@@ -17,6 +19,10 @@ const CentraldeDadosProvider = ({ children }) => {
     const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ");
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
+
+  const AtualizarDadosDúvida = (novosDadosDúvida) => {
+    setDadosDúvida(novosDadosDúvida);
+  };
 
   const AtualizarDadosPrimeiroNome = (novosDadosPrimeirosNome) => {
     setDadosPrimeirosNome(novosDadosPrimeirosNome);
@@ -49,6 +55,7 @@ const CentraldeDadosProvider = ({ children }) => {
       AtualizarAssuntoEmail,
       doisPrimeirosNomes,
       AtualizarDadosPrimeiroNome,
+      AtualizarDadosDúvida,
     }}>
       {children}
     </CentraldeDadosContext.Provider>
