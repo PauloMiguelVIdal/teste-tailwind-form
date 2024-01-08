@@ -54,8 +54,10 @@ const CentraldeDadosProvider = ({ children }) => {
       setAssuntoEmail,
       AtualizarAssuntoEmail,
       doisPrimeirosNomes,
+      dadosPrimeirosNome,
       AtualizarDadosPrimeiroNome,
       AtualizarDadosDúvida,
+      dadosDúvida
     }}>
       {children}
     </CentraldeDadosContext.Provider>
