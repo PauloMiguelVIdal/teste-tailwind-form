@@ -29,8 +29,8 @@ function App() {
     <div>
       <CentraldeDadosProvider>
       {/* <PaginaInicial className="w-screen h-[1024] bg-roxo" ></PaginaInicial > */}
-      <PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>
-      {/* <PaginaCartãoStandart className="w-[1440px] h-[1024px]"></PaginaCartãoStandart> */}
+      {/* <PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack> */}
+      <PaginaCartãoStandart className="w-[1440px] h-[1024px]"></PaginaCartãoStandart>
       {/* <PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"></PaginaTodosOsBenefíciosCartãoBlack>
       <PaginaTodosOsBenefíciosCartãoStandart className="w-[1440px] h-[1024px]"></PaginaTodosOsBenefíciosCartãoStandart>
       <PaginaCriptomoeda className="w-[1440px] h-[1024px]"></PaginaCriptomoeda>
