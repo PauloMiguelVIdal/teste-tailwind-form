@@ -67,3 +67,17 @@ margin-top: -40px;
 .linkTexto:hover::before {
   width: 100%; /* Expandir o sublinhado ao passar o mouse */
 }
+
+.navbarHover{
+margin: 0px 48px 0px 48px;
+cursor: pointer;
+}
+
+.navbarHover:hover{
+  padding: 0px 33px 0px 33px;
+  margin: 0px 15px 0px 15px;
+  background-color: #331B8C;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
