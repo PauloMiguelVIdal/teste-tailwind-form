@@ -13,7 +13,8 @@ function NomeEmail() {
     }
 
     function handleChangeNome(event) {
-        setNovoNome(event.target.value)
+        const novoValor = event.target.value || "";
+        setNovoNome(novoValor.toUpperCase())
     }
 
 

@@ -16,7 +16,7 @@ const CentraldeDadosProvider = ({ children }) => {
   useEffect(() => {
     // Atualiza dadosPrimeirosNome sempre que dadosNome muda
     const novosNomes = dadosNome.split(" ");
-    const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ");
+    const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ").toUpperCase();
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
 
