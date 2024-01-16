@@ -16,7 +16,7 @@ aprimorada e um incrível potencial<br></br>
  de crescimento. Saiba mais agora <br></br>
 e participe do futuro das finanças!</h2>
 <button className="linkTexto ml-[200px] pt-[50px]">
-        <a href="teste" className="">
+        <a href="criptomoeda" className="">
         <h4 className="text-roxoForte text-[40px]  fonteBold">Saiba mais sobre a OBcoin</h4>
     </a>
     </button>

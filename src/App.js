@@ -13,6 +13,7 @@ import TelaInicialCartão from './paginaCartão/TelaInicialCartão/TelaInicialCa
 import { CentraldeDadosProvider } from './ComponentesUniversais/CentralDeDadosContext';
 import {Route, BrowserRouter as Router} from "react-router-dom"
 import { Routes } from 'react-router-dom';
+import PaginaInicialApp from './paginaInicial/paginaInicialApp/PaginaInicialApp';
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <CentraldeDadosProvider>
       <Routes>
         <Route path='/' element={<PaginaInicial className="w-screen h-[1024] bg-roxo" />}/>
+        <Route path="/app" element={<PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>}/>
       <Route path='/cartaoBlack' element={<PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>}/>
       <Route path='/cartaoStandart' element={<PaginaCartãoStandart className="w-[1440px] h-[1024px]"/>}/>
       <Route path='/benefíciosCartãoBlack' element={<PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"/>}/>

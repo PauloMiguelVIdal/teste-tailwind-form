@@ -7,9 +7,15 @@ import PaginaInicialParceiras from './paginaInicialParcerias/PaginaInicialParcei
 import TelaInicial from "./telaInicial/TelaInicial";
 import PaginaInicialCadidatar from './paginaInicialCadidatar/PaginaInicialCadidatar';
 import Footer from "../ComponentesUniversais/Footer";
+import {Route, BrowserRouter as Router} from "react-router-dom"
+
 function PaginaInicial() {
     return (
         <div>
+            
+            
+            
+
             <TelaInicial></TelaInicial>
             <PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>
             <PaginaInicialCartões className="w-[1440px] h-[1024px]"></PaginaInicialCartões>
