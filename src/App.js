@@ -27,6 +27,9 @@ function App() {
       <Routes>
         <Route path='/' element={<PaginaInicial className="w-screen h-[1024] bg-roxo" />}/>
         <Route path="/app" element={<PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>}/>
+        <Route path="/cartãoStandart" element={<PaginaCartãoStandart/>}/>
+        
+
       <Route path='/cartaoBlack' element={<PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>}/>
       <Route path='/cartaoStandart' element={<PaginaCartãoStandart className="w-[1440px] h-[1024px]"/>}/>
       <Route path='/benefíciosCartãoBlack' element={<PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"/>}/>

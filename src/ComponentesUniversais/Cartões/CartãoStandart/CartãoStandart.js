@@ -6,7 +6,7 @@ import InfoCartão from "../../InfoCartão";
 function CartãoStandart() {
 
     return (
-        <div className=" origin-center flex justify-center items-center flex-col w-110 h-[37.5rem] bg-gradient-to-br from-roxoForte via-roxo to-laranja rounded-[40px]" >
+        <div className=" origin-center flex justify-center items-center flex-col w-110 h-[37.5rem] bg-gradient-to-br from-roxoForte via-roxo to-laranja rounded-[40px] " >
             <div className="flex justify-center items-center flex flex-col rounded-3xl border-white/20 w-[22.5rem] h-[35rem] bg-transparent border-2 ">
                 <img className="w-[10rem] h-[10rem] m-9" src={obcoin} alt="obcoin"></img>
                 <InfoCartão></InfoCartão>

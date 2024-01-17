@@ -6,7 +6,6 @@ function CostasCartãoBlackLimpo() {
             <div className="origin-center flex justify-center items-center flex-row w-110 h-[37.5rem] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-10">
                 <div className="w-[30px] h-[100px] bg-laranja rounded-[20px] relative bottom-[140px] left-[290px] rotate-180">
                     <div className="w-[27px] h-[95px] bg-laranjaFraco relative left-[2px] rounded-[20px]">
-    
                         <div className="w-[32px] h-[55px] bg-roxoForte relative right-[2.5px] bott-[1px] rounded-[20px]">
                             <h4 className="text-white rotate-90 fonteBold text-[15px] relative  top-[17px]" >cvv</h4>
                         </div>
