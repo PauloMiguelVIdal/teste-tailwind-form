@@ -1,6 +1,4 @@
 import React from "react";
-import CartãoStandart from "../../ComponentesUniversais/Cartões/CartãoStandart/CartãoStandart";
-import CartãoBlack from "../../ComponentesUniversais/Cartões/CartãoBlack/CartãoBlack";
 import obcoin from "../../Logo/OBCOIN svg.svg"
 import InfoCartão from "../../ComponentesUniversais/InfoCartão";
 import chip from "../../ComponentesUniversais/Cartões/iconParaCartão/chip-de-cartao-de-credito (1).png"
@@ -25,15 +23,16 @@ function PaginaInicialCartões(props) {
                             </div>
                         </a>
 
-
-                        <div className="origin-center flex justify-center items-center flex-col w-110 h-[37.5rem] bg-gradient-to-br from-black from-35% to-roxoForte to-65% rounded-[40px] hover:origin-center hover:rotate-12 transition-all box3">
-                            <div className="flex justify-center items-center flex flex-col rounded-3xl border-laranja w-[22.5rem] h-[35rem] bg-transparent border-2 ">
-                                <img className="w-[10rem] h-[10rem] m-9" src={obcoin} alt="obcoin"></img>
-                                <InfoCartão></InfoCartão>
-                                <h1 className="text-laranja text-4xl mt-8 fonteBold">BLACK</h1>
-                                <img className="rotate-90 mb-[4.31rem] mt-8" src={chip} alt="chip"></img>
+                        <a href="cartãoBlack">
+                            <div className="origin-center flex justify-center items-center flex-col w-110 h-[37.5rem] bg-gradient-to-br from-black from-35% to-roxoForte to-65% rounded-[40px] hover:origin-center hover:rotate-12 transition-all box3">
+                                <div className="flex justify-center items-center flex flex-col rounded-3xl border-laranja w-[22.5rem] h-[35rem] bg-transparent border-2 ">
+                                    <img className="w-[10rem] h-[10rem] m-9" src={obcoin} alt="obcoin"></img>
+                                    <InfoCartão></InfoCartão>
+                                    <h1 className="text-laranja text-4xl mt-8 fonteBold">BLACK</h1>
+                                    <img className="rotate-90 mb-[4.31rem] mt-8" src={chip} alt="chip"></img>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

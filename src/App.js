@@ -14,8 +14,8 @@ import { CentraldeDadosProvider } from './ComponentesUniversais/CentralDeDadosCo
 import {Route, BrowserRouter as Router} from "react-router-dom"
 import { Routes } from 'react-router-dom';
 import PaginaInicialApp from './paginaInicial/paginaInicialApp/PaginaInicialApp';
-
-
+import PaginaBenefíciosCartãoBlack from "./paginaBenefíciosCartãoBlack/PaginaBenefíciosCartãoBlack"
+import PaginaBeneficiosCartãoStandart from './paginaCartãoStandart/PaginaBeneficiosCartãoStandart/PaginaBeneficiosCartãoStandart';
 
 
 function App() {
@@ -28,6 +28,11 @@ function App() {
         <Route path='/' element={<PaginaInicial className="w-screen h-[1024] bg-roxo" />}/>
         <Route path="/app" element={<PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>}/>
         <Route path="/cartãoStandart" element={<PaginaCartãoStandart/>}/>
+        <Route path="/cartãoBlack" element={<PaginaCartãoBlack/>}/>
+        <Route path="/benefíciosCartãoBlack" element={<PaginaBenefíciosCartãoBlack/>}/>
+        <Route path="/benefíciosCartãoStandart" element={<PaginaBeneficiosCartãoStandart/>}/>
+       
+
         
 
       <Route path='/cartaoBlack' element={<PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>}/>

@@ -16,20 +16,20 @@ import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
     return(
         <div>
-        <TelaInicialCartãoBlack></TelaInicialCartãoBlack>
-        <PaginaBemVindoCartãoBlack ></PaginaBemVindoCartãoBlack>
-        <PaginaBeneficiosCartãoBlack></PaginaBeneficiosCartãoBlack>
-        <PaginaRequisitosCartãoBlack></PaginaRequisitosCartãoBlack>
-        <PaginaSolicitarCartãoBlack></PaginaSolicitarCartãoBlack>
-        <PaginaFormularioCartãoBlack></PaginaFormularioCartãoBlack>
-        <PaginaSolicitarCartãoBlackResposta></PaginaSolicitarCartãoBlackResposta>
-        <PaginaFormularioBlackResposta></PaginaFormularioBlackResposta>
-        <PaginaSemTaxaCartãoBlack></PaginaSemTaxaCartãoBlack>
-        <PaginaFAQs></PaginaFAQs>
-        <PaginaFAQsResposta></PaginaFAQsResposta>
-        <PaginaDepoimentosCartãoBlack></PaginaDepoimentosCartãoBlack>
-        <PaginaSuporteBlack></PaginaSuporteBlack>
-        <Footer className="w-full h-[1024px]"></Footer>
+        <TelaInicialCartãoBlack/>
+        <PaginaBemVindoCartãoBlack/>
+        <PaginaBeneficiosCartãoBlack/>
+        <PaginaRequisitosCartãoBlack/>        
+        <PaginaSolicitarCartãoBlack/>
+        <PaginaFormularioCartãoBlack/>
+        <PaginaSolicitarCartãoBlackResposta/>
+        <PaginaFormularioBlackResposta/>
+        <PaginaSemTaxaCartãoBlack/>
+        <PaginaFAQs/>
+        <PaginaFAQsResposta/>
+        <PaginaDepoimentosCartãoBlack/>
+        <PaginaSuporteBlack/>
+        <Footer className="w-full h-[1024px]"/>
         </div>
     )
 }

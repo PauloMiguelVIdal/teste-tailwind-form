@@ -3,7 +3,7 @@ function PaginaRequisitosCartãoBlack() {
     return (
         <div className="w-full h-[1024px]">
             <button className="linkTexto ml-[200px] mt-[30px]">
-                <a href="teste" className="">
+                <a href="benefíciosCartãoBlack" className="">
                     <h4 className="text-[40px] text-laranja fonteBold ">Saiba mais sobre os benefícios</h4>
                 </a>
             </button>
