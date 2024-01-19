@@ -16,7 +16,7 @@ function Navbar() {
                     App
                 </li>
                 <li className="navbarHover">
-                        Cartões
+                    Cartões
                 </li>
                 {/* <ul>
                 <li>Cartão Standart</li>
@@ -25,14 +25,19 @@ function Navbar() {
                 <li className="navbarHover">
                     Benefícios
                 </li>
-                <li className="navbarHover">
+                <a href="criptomoeda">
+
+                    <li className="navbarHover">
                         Moeda
-                </li>
+                    </li>
+                </a>
+                <a href="cultura">
                 <li className="navbarHover">
-                        Cultura
+                    Cultura
                 </li>
+                </a>
                 <li className="navbarHover">
-                        Candidatura
+                    Candidatura
                 </li>
             </ul>
         </div>
