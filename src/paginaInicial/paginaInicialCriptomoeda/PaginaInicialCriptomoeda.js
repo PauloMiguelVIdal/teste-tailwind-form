@@ -17,7 +17,7 @@ function PaginaInicialCriptomoeda() {
                 e participe do futuro das finanças!</h2>
             <button className="linkTexto ml-[200px] pt-[50px]">
                 <a href="criptomoeda" className="">
-                    <h4 className="text-roxoForte text-[40px]  fonteBold">Saiba mais sobre a OBcoin</h4>
+                    <h4 className="text-laranja text-[40px]  fonteBold">Saiba mais sobre a OBcoin</h4>
                 </a>
             </button>
             <img className="relative left-[1200px] bottom-[620px] box4" width={550} src={Obcoin} alt="obcoin"></img>

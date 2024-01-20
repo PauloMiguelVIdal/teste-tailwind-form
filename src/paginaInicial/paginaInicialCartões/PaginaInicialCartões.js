@@ -40,7 +40,7 @@ function PaginaInicialCartões(props) {
 
 
             <div className="bg-white h-[22.5rem] w-full">
-                <button className="linkTexto ml-[200px] ml-[100px] pt-[280px]">
+                <button className="linkTexto ml-[200px] ml-[100px] mt-[280px]">
                     <a href="cartões" className="">
                         <h4 className="  text-[40px] fonteBold text-laranja">saiba mais sobre cartões</h4>
                     </a>
