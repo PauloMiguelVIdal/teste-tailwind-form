@@ -58,7 +58,7 @@ function Formulario() {
                     className="placeholder:text-white placeholder:opacity-70 z-50 text-[25px] fonteBold w-[470px] pl-[10px] h-[60px] bg-roxo bg-opacity-20 rounded-[17.50px]"
                 />
             </div>
-            <button onClick={atualizarContexto,chamado} className="w-[500px] h-[60px] text-[20px] fonteBold bg-laranja rounded-[20px] text-white mt-[30px] z-50">Candidatar-se</button>
+            <button onClick={atualizarContexto, chamado} className="w-[500px] h-[60px] text-[20px] fonteBold bg-laranja rounded-[20px] text-white mt-[30px] z-50">Candidatar-se</button>
         </div>
     )
 }

@@ -7,12 +7,17 @@ function Footer() {
         <div className="flex flex-col">
             <div className=" bg-gradient-to-b from-roxoForte to-marinho flex place-content-evenly h-[1024px] w-full rounded-t-[40px]">
                 <div className="pt-[100px]">
+                    <a href="https://github.com/PauloMiguelVIdal">
                     <h2 className="text-center text-[25px] fonteBold text-white opacity-50">
                         Git hub
                     </h2>
+                    </a>
+                    <a href="https://www.linkedin.com/in/paulo-miguel-vidal-da-silva-00b1b8172/">
                     <h2 className="text-center text-[25px] fonteBold text-white opacity-50">
                         Linkedin
                     </h2>
+                    </a>
+                        
                     <h2 className="text-center text-[25px] fonteBold text-white opacity-50">
                         Currículo
                     </h2>
