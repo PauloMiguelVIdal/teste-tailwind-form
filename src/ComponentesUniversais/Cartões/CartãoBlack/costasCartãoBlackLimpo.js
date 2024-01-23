@@ -10,7 +10,18 @@ function CostasCartãoBlackLimpo() {
                         ouvidoria @OBank.com.br<br />
                         0800 887 0463</h4>
                 </div>
-
+                <div>
+                    <h3 className="text-white rotate-90">Está com dúvida?<br/>
+                        Nosso app póde te ajudar.</h3>
+                </div>
+                <div>
+                    <h3 className="text-white rotate-90">Fale com a gente<br/>
+                        08005912117</h3>
+                </div>
+                <div>
+                    <h3 className="text-white rotate-90">Outside Brazil <br/>
+                        1636 722 7111</h3>
+                </div>
                 <div className="w-[30px] h-[100px] bg-laranja rounded-[20px] relative bottom-[140px] left-[290px] rotate-180">
                     <h4 className="text-white rotate-90 fonteBold text-[15px] relative left-[80px] top-[17px]" >20525234234234234</h4>
                 </div>
