@@ -7,6 +7,13 @@ function NomeEmail() {
     
     const { dadosNome, AtualizarDadosNome } = useContext(CentraldeDadosContext);
     const [novoNome, setNovoNome] = useState('');
+    
+    
+    const { dadosNumeroCartão, AtualizarDadosNumerocartão } = useContext(CentraldeDadosContext);
+    const [novoNumeroCartão, setNovoNumeroCartão] = useState('');
+
+
+
 
     function handleChangeEmail(event) {
         setNovoEmail(event.target.value)
@@ -17,21 +24,33 @@ function NomeEmail() {
         setNovoNome(novoValor.toUpperCase())
     }
 
-
+    function geradorCartão(){
+        let numeroCartão = String(Math.random(22)).slice(2)
+        console.log(numeroCartão)
+        setNovoNumeroCartão(numeroCartão)
+    }
 
     function atualizarContexto() {
+geradorCartão()
+
         if (novoEmail) {
             AtualizarDadosEmail(novoEmail)
         }
         if (novoNome) {
             AtualizarDadosNome(novoNome)
+            AtualizarDadosNumerocartão(novoNumeroCartão)
         }
+        
+        
 
         console.log(novoEmail)
         console.log(dadosEmail)
    
         console.log(novoNome)
         console.log(dadosNome)
+   
+        console.log(novoNumeroCartão)
+        console.log(dadosNumeroCartão)
     }
 
 
