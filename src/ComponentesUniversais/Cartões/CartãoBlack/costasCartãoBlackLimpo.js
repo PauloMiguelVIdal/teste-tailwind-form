@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { CentraldeDadosContext } from "../CentralDeDadosContext";
+const { dadosNumeroCartão} = useContext(CentraldeDadosContext);
+
 
 function CostasCartãoBlackLimpo() {
     return (
@@ -23,7 +26,7 @@ function CostasCartãoBlackLimpo() {
                         1636 722 7111</h3>
                 </div>
                 <div className="w-[30px] h-[100px] bg-laranja rounded-[20px] relative bottom-[140px] left-[290px] rotate-180">
-                    <h4 className="text-white rotate-90 fonteBold text-[15px] relative left-[80px] top-[17px]" >20525234234234234</h4>
+                    <h4 className="text-white rotate-90 fonteBold text-[15px] relative left-[80px] top-[17px]" >{dadosNumeroCartão}</h4>
                 </div>
 
                 <div className="relative bottom-[140px] left-[290px] rotate-180">
