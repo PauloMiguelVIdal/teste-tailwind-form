@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { CentraldeDadosContext } from "../CentralDeDadosContext";
-const { dadosNumeroCartão} = useContext(CentraldeDadosContext);
+import { CentraldeDadosContext } from "../../CentralDeDadosContext";
 
 
 function CostasCartãoBlackLimpo() {
+    const { dadosNumeroCartão} = useContext(CentraldeDadosContext);
     return (
         <div>
             <div className="origin-center flex justify-center items-center flex-row w-110 h-[37.5rem] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-10">
