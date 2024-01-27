@@ -3,7 +3,8 @@ import { CentraldeDadosContext } from "../../CentralDeDadosContext";
 
 
 function CostasCartãoBlackLimpo() {
-    const { dadosNumeroCartão} = useContext(CentraldeDadosContext);
+    const { dadosNumeroCartão } = useContext(CentraldeDadosContext);
+    const { dadosNumeroCVV } = useContext(CentraldeDadosContext);
     return (
         <div>
             <div className="origin-center flex justify-center items-center flex-row w-110 h-[37.5rem] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-10">
@@ -14,19 +15,21 @@ function CostasCartãoBlackLimpo() {
                         0800 887 0463</h4>
                 </div>
                 <div>
-                    <h3 className="text-white rotate-90">Está com dúvida?<br/>
+                    <h3 className="text-white rotate-90">Está com dúvida?<br />
                         Nosso app póde te ajudar.</h3>
                 </div>
                 <div>
-                    <h3 className="text-white rotate-90">Fale com a gente<br/>
-                        08005912117</h3>
+                    <h3 className="text-white rotate-90">Fale com a gente<br />
+                        08005912117
+                        </h3>
                 </div>
                 <div>
-                    <h3 className="text-white rotate-90">Outside Brazil <br/>
-                        1636 722 7111</h3>
+                    <h3 className="text-white rotate-90">Outside Brazil <br />
+                        1636 722 7111
+                    </h3>
                 </div>
                 <div className="w-[30px] h-[100px] bg-laranja rounded-[20px] relative bottom-[140px] left-[290px] rotate-180">
-                    <h4 className="text-white rotate-90 fonteBold text-[15px] relative left-[80px] top-[17px]" >{dadosNumeroCartão}</h4>
+                    <h4 className="text-laranja rotate-90 fonteBold text-[15px] relative left-[80px] top-[17px]" >{dadosNumeroCartão}</h4>
                 </div>
 
                 <div className="relative bottom-[140px] left-[290px] rotate-180">
@@ -34,7 +37,7 @@ function CostasCartãoBlackLimpo() {
                         <div className="w-[32px] h-[55px] bg-roxoForte relative right-[2.5px] bott-[1px] rounded-[20px]">
                             <h4 className="text-white rotate-90 fonteBold text-[15px] relative  top-[17px]" >cvv</h4>
                         </div>
-                        <h4 className="text-white rotate-90 fonteBold text-[15px] relative top-[8px]" >123</h4>
+                        <h4 className="text-white rotate-90 fonteBold text-[15px] relative top-[8px]" >{dadosNumeroCVV}</h4>
                     </div>
                 </div>
 

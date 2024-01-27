@@ -12,6 +12,9 @@ function NomeEmail() {
     const { dadosNumeroCartão, AtualizarDadosNumerocartão } = useContext(CentraldeDadosContext);
     const [novoNumeroCartão, setNovoNumeroCartão] = useState('');
 
+    const { dadosNumeroCVV, AtualizarDadosNumeroCVV } = useContext(CentraldeDadosContext);
+    const [novoNumeroCVV, setNovoNumeroCVV] = useState('');
+
 
 
 
@@ -28,8 +31,12 @@ function NomeEmail() {
 
         function geradorCartão() {
             let numeroCartão = String(Math.random(22)).slice(2)
+            let numeroCVV = String(Math.random(3)).slice(2)
+
             console.log(numeroCartão)
+            console.log(numeroCVV)
             setNovoNumeroCartão(numeroCartão)
+            setNovoNumeroCVV(numeroCVV)
         }
         geradorCartão()
 
@@ -39,6 +46,8 @@ function NomeEmail() {
         if (novoNome) {
             AtualizarDadosNome(novoNome)
             AtualizarDadosNumerocartão(novoNumeroCartão)
+            AtualizarDadosNumeroCVV(novoNumeroCVV)
+
         }
 
 
@@ -51,6 +60,11 @@ function NomeEmail() {
 
         console.log(novoNumeroCartão)
         console.log(dadosNumeroCartão)
+
+        console.log(novoNumeroCVV)
+        console.log(dadosNumeroCVV)
+
+
     }
 
 

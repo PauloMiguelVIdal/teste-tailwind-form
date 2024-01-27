@@ -6,6 +6,7 @@ const CentraldeDadosProvider = ({ children }) => {
   const [dadosNome, setDadosNome] = useState("");
   const [dadosEmail, setDadosEmail] = useState("");
   const [dadosNumeroCartão, setDadosNumeroCartão] = useState("");
+  const [dadosNumeroCVV, setDadosNumeroCVV] = useState("");
   const [assuntoEmail, setAssuntoEmail] = useState("");
   const [dadosDúvida, setDadosDúvida] = useState("");
   const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
@@ -43,6 +44,10 @@ const CentraldeDadosProvider = ({ children }) => {
   const AtualizarDadosNumerocartão = (novosDadosNumeroCartão) => {
     setDadosNumeroCartão(novosDadosNumeroCartão);
   };
+  ;
+  const AtualizarDadosNumeroCVV = (novosDadosNumeroCVV) => {
+    setDadosNumeroCVV(novosDadosNumeroCVV);
+  };
 
   const AtualizarAssuntoEmail = (novosDadosAssuntoEmail) => {
     setAssuntoEmail(novosDadosAssuntoEmail);
@@ -67,7 +72,9 @@ const CentraldeDadosProvider = ({ children }) => {
       AtualizarDadosDúvida,
       dadosDúvida,
       AtualizarDadosNumerocartão,
-      dadosNumeroCartão
+      dadosNumeroCartão,
+      AtualizarDadosNumeroCVV,
+      dadosNumeroCVV
     }}>
       {children}
     </CentraldeDadosContext.Provider>
