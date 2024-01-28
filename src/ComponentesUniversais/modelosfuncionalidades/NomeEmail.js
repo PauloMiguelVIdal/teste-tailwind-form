@@ -31,12 +31,11 @@ function NomeEmail() {
 
         function geradorCartão() {
             let numeroCartão = String(Math.random(22)).slice(2)
-            let numeroCVV = String(Math.random(3)).slice(2)
-
-            console.log(numeroCartão)
-            console.log(numeroCVV)
+            let numeroCVV = String(Math.floor(Math.random() * 1000));
             setNovoNumeroCartão(numeroCartão)
             setNovoNumeroCVV(numeroCVV)
+            console.log(numeroCartão)
+            console.log(numeroCVV)
         }
         geradorCartão()
 
