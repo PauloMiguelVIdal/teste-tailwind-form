@@ -7,7 +7,7 @@ function CostasCartãoBlackLimpo() {
     const { dadosNumeroCVV } = useContext(CentraldeDadosContext);
     return (
         <div className="origin-center flex justify-center items-center flex-row w-110 h-[37.5rem] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-10">
-            <div className="w-[70px] h-[600px] bg-black relative z-10 mr-[130px]"></div>
+            <div className="w-[70px] h-[600px] bg-black relative z-10 mr-[70px]"></div>
 
             <div>
 
@@ -21,16 +21,16 @@ function CostasCartãoBlackLimpo() {
                                 0800 887 0463</h4>
                         </div>
 
-                        <div className="w-[30px] h-[100px] bg-laranja rounded-[20px]">
+                        <div className="w-[195px] h-[55px] bg-white rounded-[20px] flex justify-center items-center">
                             <h4 className="text-laranja fonteBold text-[15px]" >{dadosNumeroCartão}</h4>
                         </div>
 
-                        <div className="rotate-90">
-                            <div className="w-[27px] h-[95px] bg-laranjaFraco rounded-[20px] ">
-                                <div className="w-[32px] h-[55px] bg-roxoForte rounded-[20px]">
-                                    <h4 className="text-white  fonteBold text-[15px] " >cvv</h4>
+                        <div className="w-[195px] h-[55px] bg-white rounded-[20px] flex justify-center items-center">
+                            <div className="w-[32px] h-[95px] bg-laranjaFraco rounded-[20px] rotate-90">
+                                <h4 className="text-white fonteBold text-[15px] rotate-[-90deg] flex justify-center items-center relative top-[20px]" >{dadosNumeroCVV}</h4>
+                                <div className="w-[32px] h-[55px] bg-roxoForte rounded-[20px] relative top-[30px] flex justify-center items-center">
+                                    <h4 className="text-white  fonteBold text-[15px] rotate-[-90deg]" >cvv</h4>
                                 </div>
-                                <h4 className="text-white fonteBold text-[15px]" >{dadosNumeroCVV}</h4>
                             </div>
                         </div>
                     </div>
