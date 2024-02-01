@@ -9,7 +9,7 @@ function CartõesSeparados() {
                 <CartãoBlack></CartãoBlack>
             </div>
             <div className=" relative z-10 right-[160px] top-[-370px]">
-                <CostasCartãoBlackLimpo></CostasCartãoBlackLimpo>
+                <CostasCartãoBlackLimpo rotate={90}></CostasCartãoBlackLimpo>
             </div>
         </div>
     )

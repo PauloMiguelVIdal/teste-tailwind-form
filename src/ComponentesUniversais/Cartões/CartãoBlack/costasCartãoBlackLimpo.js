@@ -2,11 +2,11 @@ import React, { useContext, useState } from "react";
 import { CentraldeDadosContext } from "../../CentralDeDadosContext";
 
 
-function CostasCartãoBlackLimpo() {
+function CostasCartãoBlackLimpo(props) {
     const { dadosNumeroCartão } = useContext(CentraldeDadosContext);
     const { dadosNumeroCVV } = useContext(CentraldeDadosContext);
     return (
-        <div className="origin-center flex justify-center items-center flex-row w-[400px] h-[600px] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-[200px] rotate-[90deg]">
+        <div className=" origin-center flex justify-center items-center flex-row w-[400px] h-[600px] bg-gradient-to-tl from-black from-35% to-roxoForte to-65% rounded-[40px] ml-[200px] ">
 
             <div>
             <div className="w-[70px] h-[600px] bg-black relative top-[184px] left-[37px]"></div>
