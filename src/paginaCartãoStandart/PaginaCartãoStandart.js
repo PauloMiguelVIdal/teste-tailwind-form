@@ -21,11 +21,11 @@ function PaginaCartãoStandart(){
         <PaginaBeneficiosCartãoStandart></PaginaBeneficiosCartãoStandart>
         <PaginaSolicitarCartãoStandart></PaginaSolicitarCartãoStandart>
         <PaginaFormularioCartãoStandart></PaginaFormularioCartãoStandart>
-        {/* <PaginaSolicitarCartãoStandartResposta></PaginaSolicitarCartãoStandartResposta>
-        <PaginaFormularioCartãoStandartResposta></PaginaFormularioCartãoStandartResposta> */}
+        <PaginaSolicitarCartãoStandartResposta></PaginaSolicitarCartãoStandartResposta>
+        <PaginaFormularioCartãoStandartResposta></PaginaFormularioCartãoStandartResposta>
         <PaginaSemTaxaCartãoStandart></PaginaSemTaxaCartãoStandart>
         <PaginaFAQs></PaginaFAQs>
-        {/* <PaginaFAQsResposta></PaginaFAQsResposta> */}
+        <PaginaFAQsResposta></PaginaFAQsResposta>
         <PaginaDepoimentosCartãoStandart></PaginaDepoimentosCartãoStandart>
         <PaginaSuporteStandart></PaginaSuporteStandart>
         <Footer className="w-full h-[1024px]"></Footer>
