@@ -16,6 +16,7 @@ import { Routes } from 'react-router-dom';
 import PaginaInicialApp from './paginaInicial/paginaInicialApp/PaginaInicialApp';
 import PaginaBenefíciosCartãoBlack from "./paginaBenefíciosCartãoBlack/PaginaBenefíciosCartãoBlack"
 import PaginaBeneficiosCartãoStandart from './paginaCartãoStandart/PaginaBeneficiosCartãoStandart/PaginaBeneficiosCartãoStandart';
+import PaginaCartões from './paginaCartões/paginaCartões';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/cartãoBlack" element={<PaginaCartãoBlack/>}/>
         <Route path="/benefíciosCartãoBlack" element={<PaginaBenefíciosCartãoBlack/>}/>
         <Route path="/benefíciosCartãoStandart" element={<PaginaBeneficiosCartãoStandart/>}/>
+        <Route path="/cartões" element={<PaginaCartões/>}/>
        
 
         
