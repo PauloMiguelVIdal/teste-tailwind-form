@@ -2,7 +2,7 @@ import React from "react";
 import PaginaBemVindoCartões from "./PaginaBemVindoCartões.js/PaginaBemVindoCartões";
 import PaginaEscolhaSeuCartão from "./PaginaEscolhaSeuCartão";
 import PaginaPlanosCartões from "./PaginaPlanosCartões";
-
+import CartõesCurvosSeparados from "../ComponentesUniversais/Cartões/variaçõesCartões/CartõesCruvosSeparados";
 
 
  function PaginaCartões(){
