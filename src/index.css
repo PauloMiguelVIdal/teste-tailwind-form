@@ -32,7 +32,10 @@ margin-top: -40px;
   border-radius: 360px;
 }
 
-
+.box5{
+  box-shadow: rgba(242, 116, 5, 0.4) 5px 5px, rgba(242, 116, 5, 0.3) 10px 10px;
+margin-top: -40px;
+}
 .fonteBold{
   font-family: 'Inter', sans-serif;
   font-weight:700;

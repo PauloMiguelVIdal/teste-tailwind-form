@@ -4,7 +4,7 @@ import CartõesCurvosSeparados from "../../ComponentesUniversais/Cartões/varia�
 export default function PaginaBemVindoCartões(){
     return(
         <div>
-        <div className="w-full h-[1024px] bg-gradient-radial from-laranja via-roxo to-black">
+        <div className="w-full h-[1024px] bg-gradient-radial from-laranja from-10% via-roxo via-40% to-black to-90% ">
             <div className="h-[34rem] w-full bg-transparent">
                 <Navbar></Navbar>
                 <CartõesCurvosSeparados/>
