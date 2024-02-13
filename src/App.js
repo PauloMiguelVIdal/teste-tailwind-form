@@ -25,6 +25,7 @@ function App() {
     <Router>
     <div>
       <CentraldeDadosProvider>
+        {/* sistema de rotas */}
       <Routes>
         <Route path='/' element={<PaginaInicial className="w-screen h-[1024] bg-roxo" />}/>
         <Route path="/app" element={<PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>}/>
