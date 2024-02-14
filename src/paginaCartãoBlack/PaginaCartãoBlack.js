@@ -14,14 +14,29 @@ import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaF
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
+    const scrollParaFormulario = () => {
+        const formulario = document.getElementById("formularioCartaoBlack");
+        if (formulario) {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: formulario.offsetTop
+            });
+        }
+    };
+
+
+
     return(
         <div>
-        <TelaInicialCartãoBlack/>
+        <TelaInicialCartãoBlack scrollParaFormulário={scrollParaFormulario}/>
         <PaginaBemVindoCartãoBlack/>
         <PaginaBeneficiosCartãoBlack/>
         <PaginaRequisitosCartãoBlack/>        
         <PaginaSolicitarCartãoBlack/>
-        <PaginaFormularioCartãoBlack/>
+    <div id="formularioCartaoBlack">
+        < PaginaFormularioCartãoBlack/>
+    </div>
+ 
         <PaginaSolicitarCartãoBlackResposta/>
         <PaginaFormularioBlackResposta/>
         <PaginaSemTaxaCartãoBlack/>
