@@ -1,6 +1,6 @@
 import React from "react";
-
-export default function PaginaPlanosCartões() {
+import { Link } from "react-router-dom";
+export default function PaginaPlanosCartões(scrollParaFormulárioBlack) {
     return (
         <div>
             <div className="w-full h-[1024px] bg-white ">
@@ -12,9 +12,11 @@ export default function PaginaPlanosCartões() {
                         <h4 className="text-white text-center fonteLight text-[40px] pt-[60px]">Suporte Prioritário</h4>
                         <h4 className="text-white text-center fonteLight text-[40px] pt-[60px]">Benefícios Exclusivos</h4>
                         <div className="flex items-center justify-center pt-[200px]">
-                            <button className="w-[600px] h-[100px] bg-laranja rounded-[20px] box5">
+                        <Link to="/cartãoBlack/solicitar" >
+                            <button className="w-[600px] h-[100px] bg-laranja rounded-[20px] box5" onClick={scrollParaFormulárioBlack}>
                                 <h4 className="text-white text-center fonteBold text-[40px]">PEDIR CARTÃO BLACK</h4>
                             </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="bg-gradient-to-b from-roxo to-roxoForte to-90% h-[924px] w-[49%] relative bottom-[810px] left-[50.5%] rounded-b-[40px] box2">
