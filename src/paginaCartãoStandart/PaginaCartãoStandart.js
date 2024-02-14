@@ -14,13 +14,26 @@ import PaginaFormularioCartãoStandartResposta from "./PaginaFormularioStandartR
 import Footer from "../ComponentesUniversais/Footer";
 
 function PaginaCartãoStandart(){
+
+        const scrollParaFormulárioStandart = () => {
+            const formularioStandart = document.getElementById("formularioCartaoStandart");
+            if (formularioStandart) {
+                window.scrollTo({
+                    behavior: 'smooth',
+                    top: formularioStandart.offsetTop
+                });
+            }
+        };
+    
     return(
         <div>
-        <TelaInicialCartãoStandart></TelaInicialCartãoStandart>
+        <TelaInicialCartãoStandart scrollParaFormulárioStandart={scrollParaFormulárioStandart}/>
         <PaginaBemVindoCartãoStandart ></PaginaBemVindoCartãoStandart>
         <PaginaBeneficiosCartãoStandart></PaginaBeneficiosCartãoStandart>
         <PaginaSolicitarCartãoStandart></PaginaSolicitarCartãoStandart>
+        <div id="formularioCartaoStandart">
         <PaginaFormularioCartãoStandart></PaginaFormularioCartãoStandart>
+        </div>
         <PaginaSolicitarCartãoStandartResposta></PaginaSolicitarCartãoStandartResposta>
         <PaginaFormularioCartãoStandartResposta></PaginaFormularioCartãoStandartResposta>
         <PaginaSemTaxaCartãoStandart></PaginaSemTaxaCartãoStandart>

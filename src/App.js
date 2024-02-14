@@ -25,11 +25,22 @@ function App() {
 
   useEffect(() => {
     // Rola para o formulário quando o componente é montado
-    const formulario = document.getElementById("formularioCartaoBlack");
-    if (formulario) {
+    const formularioBlack = document.getElementById("formularioCartaoBlack");
+    if (formularioBlack) {
       window.scrollTo({
         behavior: 'smooth',
-        top: formulario.offsetTop
+        top: formularioBlack.offsetTop
+      });
+    }
+  }, []); // Esta função será executada apenas uma vez após a montagem do componente
+ 
+  useEffect(() => {
+    // Rola para o formulário quando o componente é montado
+    const formularioStandart = document.getElementById("formularioCartaoBlack");
+    if (formularioStandart) {
+      window.scrollTo({
+        behavior: 'smooth',
+        top: formularioStandart.offsetTop
       });
     }
   }, []); // Esta função será executada apenas uma vez após a montagem do componente
@@ -49,6 +60,7 @@ function App() {
         
         {/* <Route path="/cartãoBlack/solicitar" element={<PaginaFormularioCartãoBlack/>}/> */}
         <Route path="/cartãoBlack/solicitar" element={<PaginaCartãoBlack/>} />
+        <Route path="/cartãoStandart/solicitar" element={<PaginaCartãoStandart/>} />
         <Route path="/benefícios" element={<PaginaBenefíciosCartãoBlack/>}/>
         <Route path="/benefíciosCartãoBlack" element={<PaginaBenefíciosCartãoBlack/>}/>
         <Route path="/benefíciosCartãoStandart" element={<PaginaBeneficiosCartãoStandart/>}/>

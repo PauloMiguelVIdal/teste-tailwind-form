@@ -15,11 +15,11 @@ import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/Pagin
 import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
     const scrollParaFormulárioBlack = () => {
-        const formulario = document.getElementById("formularioCartaoBlack");
-        if (formulario) {
+        const formularioBlack = document.getElementById("formularioCartaoBlack");
+        if (formularioBlack) {
             window.scrollTo({
                 behavior: 'smooth',
-                top: formulario.offsetTop
+                top: formularioBlack.offsetTop
             });
         }
     };
