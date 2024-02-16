@@ -15,7 +15,7 @@ import Footer from "../ComponentesUniversais/Footer";
 
 function PaginaCartãoStandart(){
 
-        const scrollParaFormulárioStandart = () => {
+        const scrollarParaFormulárioStandart = () => {
             const formularioStandart = document.getElementById("formularioCartaoStandart");
             if (formularioStandart) {
                 window.scrollTo({
@@ -27,7 +27,7 @@ function PaginaCartãoStandart(){
     
     return(
         <div>
-        <TelaInicialCartãoStandart scrollParaFormulárioStandart={scrollParaFormulárioStandart}/>
+        <TelaInicialCartãoStandart scrollParaFormulárioStandart={scrollarParaFormulárioStandart}/>
         <PaginaBemVindoCartãoStandart ></PaginaBemVindoCartãoStandart>
         <PaginaBeneficiosCartãoStandart></PaginaBeneficiosCartãoStandart>
         <PaginaSolicitarCartãoStandart></PaginaSolicitarCartãoStandart>

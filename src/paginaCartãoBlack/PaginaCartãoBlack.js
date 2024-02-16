@@ -24,11 +24,20 @@ function PaginaCartãoBlack(){
         }
     };
 
+    const scrollParaFormulárioStandart = () => {
+        const formularioStandart = document.getElementById("formularioCartaoStandart");
+        if (formularioStandart) {
+            window.scrollTo({
+                behavior: 'smooth',
+                top: formularioStandart.offsetTop
+            });
+        }
+    };
 
 
     return(
         <div>
-       <TelaInicialCartãoBlack scrollParaFormulário={scrollParaFormulárioBlack} />
+       <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
         <PaginaBemVindoCartãoBlack/>
         <PaginaBeneficiosCartãoBlack/>
         <PaginaRequisitosCartãoBlack/>        

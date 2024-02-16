@@ -14,6 +14,16 @@ const scrollParaFormulárioBlack = () => {
     }
 };
 
+const scrollParaFormulárioStandart = () => {
+    const formularioStandart = document.getElementById("formularioCartaoStandart");
+    if (formularioStandart) {
+        window.scrollTo({
+            behavior: 'smooth',
+            top: formularioStandart.offsetTop
+        });
+    }
+};
+
 
  function PaginaCartões(){
 
@@ -22,7 +32,7 @@ const scrollParaFormulárioBlack = () => {
             
             <PaginaBemVindoCartões />{/*pagina na qual está a navbar e os componentes inicias  */}
             <PaginaEscolhaSeuCartão />
-            <PaginaPlanosCartões  scrollParaFormulário={scrollParaFormulárioBlack} />
+            <PaginaPlanosCartões  scrollParaFormulárioBlack={scrollParaFormulárioBlack} scrollParaFormulárioStandart={scrollParaFormulárioStandart} />
             <Footer/>
         </div>
     )
