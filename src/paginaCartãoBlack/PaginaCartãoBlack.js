@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
 import PaginaBeneficiosCartãoBlack from "./PaginaBeneficiosCartãoBlack/PaginaBeneficiosCartãoBlack"
@@ -14,6 +15,13 @@ import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaF
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
+ 
+
+        useEffect(() => {
+            scrollParaFormulárioBlack()
+        }, [])
+    
+
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
         if (formularioBlack) {
@@ -24,15 +32,7 @@ function PaginaCartãoBlack(){
         }
     };
 
-    const scrollParaFormulárioStandart = () => {
-        const formularioStandart = document.getElementById("formularioCartaoStandart");
-        if (formularioStandart) {
-            window.scrollTo({
-                behavior: 'smooth',
-                top: formularioStandart.offsetTop
-            });
-        }
-    };
+
 
 
     return(
