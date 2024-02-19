@@ -24,7 +24,7 @@ function Navbar() {
                 <li>Cartão Standart</li>
                 <li>Cartão Black</li>
             </ul> */}
-            <a href="/beneficios">
+            <a href="/benefícios">
                 <li className="navbarHover">
                     Benefícios
                 </li>

@@ -19,7 +19,7 @@ import PaginaBenefíciosCartãoBlack from "./paginaBenefíciosCartãoBlack/Pagin
 import PaginaBeneficiosCartãoStandart from './paginaCartãoStandart/PaginaBeneficiosCartãoStandart/PaginaBeneficiosCartãoStandart';
 import PaginaCartões from './paginaCartões/paginaCartões';
 import PaginaFormularioCartãoBlack from './paginaCartãoBlack/PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack';
-
+import PaginaBenefícios from './paginaBenefícios/paginaBenefícios';
 
 function App() {
 
@@ -63,7 +63,7 @@ function App() {
         {/* <Route path="/cartãoBlack/solicitar" element={<PaginaFormularioCartãoBlack/>}/> */}
         <Route path="/cartãoBlack/solicitar" element={<PaginaCartãoBlack/>} />
         <Route path="/cartãoStandart/solicitar" element={<PaginaCartãoStandart/>} />
-        <Route path="/benefícios" element={<PaginaBenefíciosCartãoBlack/>}/>
+        <Route path="/benefícios" element={<PaginaBenefícios/>}/>
         <Route path="/benefíciosCartãoBlack" element={<PaginaBenefíciosCartãoBlack/>}/>
         <Route path="/benefíciosCartãoStandart" element={<PaginaBeneficiosCartãoStandart/>}/>
         <Route path="/cartões" element={<PaginaCartões/>}/>
