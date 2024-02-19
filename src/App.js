@@ -50,8 +50,10 @@ function App() {
   return (
     <Router>
     <div>
+      {/* criar e separar as rotas */}
       <CentraldeDadosProvider>
         {/* sistema de rotas */}
+        {/* prosseguir com criação de página benefícios */}
       <Routes>
         <Route path='/' element={<PaginaInicial className="w-screen h-[1024] bg-roxo" />}/>
         <Route path="/app" element={<PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>}/>
