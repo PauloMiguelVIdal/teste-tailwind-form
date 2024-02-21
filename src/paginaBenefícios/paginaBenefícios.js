@@ -1,16 +1,18 @@
 import React from "react"   
 import TelaInicialBenefícios from "./telaInicialBenefícios/paginaTelaInicialBenefícios"
 import PaginaBemVindoBenefícios from "./paginaBemVindoBenefícios/PaginaBemVindoBenefícios"
-import PaginaBenefícioGerais from "./paginaBenefíciosGerais/PaginaBenefíciosGerais"
+import PaginaBenefíciosGerais from "./../paginaBenefícios/paginaBenefíciosGerais/PaginaBenefíciosGerais"
+import Footer from "../ComponentesUniversais/Footer"
 
- function PaginaBenefícios() {
+function PaginaBenefícios() {
     
     
     return (
         <div>
             <TelaInicialBenefícios/>
             <PaginaBemVindoBenefícios/>
-            <PaginaBenefícioGerais/>
+            <PaginaBenefíciosGerais/>
+            <Footer/>
         </div>
     )
 }
