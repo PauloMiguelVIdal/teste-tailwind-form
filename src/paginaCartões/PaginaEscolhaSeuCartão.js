@@ -10,10 +10,12 @@ export default function PaginaEscolhaSeuCartão() {
                     <CartãoBlack />
                     <CartãoStandart />
                 </div>
-                
-    <div className="relative bottom-[115px]">
-                <div className="bg-gradient-to-b from-roxo to-roxoForte h-[22.5rem]  w-[49%] relative top-[120px] left-[0.5%] rounded-t-[40px]"></div>
-                <div className="bg-gradient-to-b from-laranja to-roxo h-[22.5rem] w-[49%] relative bottom-[240px] left-[50.5%] rounded-t-[40px]"></div>
+           
+
+                <div className="relative bottom-[115px]">
+                    <div className="bg-gradient-to-b from-roxo to-roxoForte h-[22.5rem]  w-[49%] relative top-[120px] left-[0.5%] rounded-t-[40px]">
+                    </div>
+                    <div className="bg-gradient-to-b from-laranja to-roxo h-[22.5rem] w-[49%] relative bottom-[240px] left-[50.5%] rounded-t-[40px]"></div>
                 </div>
             </div>
         </div>
