@@ -6,7 +6,7 @@ import { Component, useEffect } from 'react';
 import PaginaInicial from '../src/paginaInicial/PaginaInicial';
 import PaginaCartãoBlack from './paginaCartãoBlack/PaginaCartãoBlack';
 import PaginaCartãoStandart from './paginaCartãoStandart/PaginaCartãoStandart';
-import PaginaTodosOsBenefíciosCartãoBlack from './paginaBenefíciosCartãoBlack/PaginaBenefíciosCartãoBlack';
+import PaginaTodosOsBenefíciosCartãoBlack from './paginaBenefíciosCartãoBlack/PaginaTodosBenefíciosCartãoBlack';
 import PaginaTodosOsBenefíciosCartãoStandart from './paginaBenefíciosCartãoStandart/PaginaBenefíciosCartãoStandart';
 import PaginaCriptomoeda from "./paginaCriptomoeda/PaginaCriptomoeda"
 import PaginaCultura from './paginaCultura/PaginaCultura';
@@ -15,12 +15,11 @@ import { CentraldeDadosProvider } from './ComponentesUniversais/CentralDeDadosCo
 import {Route, BrowserRouter as Router} from "react-router-dom"
 import { Routes } from 'react-router-dom';
 import PaginaInicialApp from './paginaInicial/paginaInicialApp/PaginaInicialApp';
-import PaginaBenefíciosCartãoBlack from "./paginaBenefíciosCartãoBlack/PaginaBenefíciosCartãoBlack"
+import PaginaBenefíciosCartãoBlack from "./paginaBenefíciosCartãoBlack/PaginaTodosBenefíciosCartãoBlack"
 import PaginaBeneficiosCartãoStandart from './paginaCartãoStandart/PaginaBeneficiosCartãoStandart/PaginaBeneficiosCartãoStandart';
 import PaginaCartões from './paginaCartões/paginaCartões';
 import PaginaFormularioCartãoBlack from './paginaCartãoBlack/PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack';
 import PaginaBenefícios from './paginaBenefícios/paginaBenefícios';
-
 function App() {
 
   useEffect(() => {
@@ -65,16 +64,12 @@ function App() {
         <Route path="/cartãoStandart/solicitar" element={<PaginaCartãoStandart/>} />
         <Route path="/benefícios" element={<PaginaBenefícios/>}/>
         <Route path="/benefíciosCartãoBlack" element={<PaginaBenefíciosCartãoBlack/>}/>
-        <Route path="/benefíciosCartãoStandart" element={<PaginaBeneficiosCartãoStandart/>}/>
+        <Route path="/benefíciosCartãoStandart" element={<PaginaTodosOsBenefíciosCartãoStandart/>}/>
         <Route path="/cartões" element={<PaginaCartões/>}/>
-       
-
-        
-
       <Route path='/cartaoBlack' element={<PaginaCartãoBlack className="w-[1440px] h-[1024px]"></PaginaCartãoBlack>}/>
       <Route path='/cartaoStandart' element={<PaginaCartãoStandart className="w-[1440px] h-[1024px]"/>}/>
-      <Route path='/benefíciosCartãoBlack' element={<PaginaTodosOsBenefíciosCartãoBlack className="w-[1440px] h-[1024px]"/>}/>
-      <Route path='/benefíciosCartãoStandart' element={<PaginaTodosOsBenefíciosCartãoStandart className="w-[1440px] h-[1024px]"/>}/>
+      <Route path='/benefíciosCartãoBlack' element={<PaginaTodosOsBenefíciosCartãoBlack/>}/>
+      <Route path='/benefíciosCartãoStandart' element={<PaginaTodosOsBenefíciosCartãoStandart/>}/>
       <Route path='/criptomoeda' element={<PaginaCriptomoeda className="w-[1440px] h-[1024px]"/>}/>
       <Route path='/cultura' element={<PaginaCultura/>}/>
       <Route path='/telaInicial' element={<TelaInicialCartão/>}/>
