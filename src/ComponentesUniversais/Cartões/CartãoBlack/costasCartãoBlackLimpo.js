@@ -27,7 +27,7 @@ function CostasCartãoBlackLimpo(props) {
 
                         <div className="w-[195px] h-[55px] bg-tranparent rounded-[20px] flex justify-center items-center">
                             <div className="w-[32px] h-[95px] bg-laranjaFraco rounded-[20px] rotate-90">
-                                <h4 className="text-tranparent fonteBold text-[15px] rotate-[-90deg] flex justify-center items-center relative top-[20px]" >{dadosNumeroCVV}</h4>
+                                <h4 className="text-tranparent text-white fonteBold text-[15px] rotate-[-90deg] flex justify-center items-center relative top-[20px]" >{dadosNumeroCVV}</h4>
                                 <div className="w-[32px] h-[55px] bg-roxoForte rounded-[20px] relative top-[40px] flex justify-center items-center">
                                     <h4 className="text-white  fonteBold text-[15px] rotate-[-90deg]" >cvv</h4>
                                 </div>
