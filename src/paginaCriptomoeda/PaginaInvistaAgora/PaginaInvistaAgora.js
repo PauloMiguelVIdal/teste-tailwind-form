@@ -4,6 +4,11 @@ import obcoin from "../../Logo/OBCOIN svg.svg"
 import binance from "../../logoParceiras/png-transparent-binance-macos-bigsur-icon-thumbnail-removebg-preview.png"
 import setaLaranja from "./seta-direita-laranja.png"
 function PaginaInvistaAgora() {
+
+const Alerta = ()=>{
+    alert("Parceria em manutenção, volte mais tarde")
+}
+
     return (
         <div className="flex justify-center items-center mb-[px] mt-[px] w-full h-[1024px]">
             <div className="w-[1200px] h-[800px] flex justify-center items-center flex-col">
@@ -23,7 +28,7 @@ function PaginaInvistaAgora() {
                         </h4>
                     </div>
                 </div>
-                <button className="w-[600px] h-[100px] rounded-[40px] bg-gradient-to-r from-roxo to-laranja">
+                <button className="w-[600px] h-[100px] rounded-[40px] bg-gradient-to-r from-roxo to-laranja" onClick={Alerta}>
                     <h4 className="text-white text-[40px] text-center fonteBold ">Obter desconto</h4>
                 </button>
             </div>
