@@ -20,7 +20,7 @@ function PaginaInicialCriptomoeda() {
                     <h4 className="text-laranja text-[40px]  fonteBold">Saiba mais sobre a OBcoin</h4>
                 </a>
             </button>
-            <img className="relative left-[1200px] bottom-[620px] box4" width={550} src={Obcoin} alt="obcoin"></img>
+            <img className="relative left-[900px] bottom-[620px] box4" width={500} src={Obcoin} alt="obcoin"></img>
         </section>
     )
 }

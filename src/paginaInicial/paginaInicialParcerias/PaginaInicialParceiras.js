@@ -21,7 +21,7 @@ function PaginaInicialParceiras() {
         <h4 className="text-laranja fonteBold  text-[40px] " >Saiba mais sobre nossa Parcerias</h4>
     </a>
     </button>
-            <div className="relative ml-[1500px] bottom-[750px]">
+            <div className="relative ml-[1000px] bottom-[820px]">
                 <div className="w-[220px] h-[220px] border-4 border-white rounded-2xl flex justify-center items-center"><img className="w-[180px] h-[180px]" src={netflix} alt="netflix"></img></div>
                 <div className="w-[220px] h-[220px] border-4 border-white rounded-2xl flex justify-center items-center mt-6"><img className="w-[180px] h-[180px]" src={amazon} alt="amazon"></img></div>
                 <div className="w-[220px] h-[220px] border-4 border-white rounded-2xl flex justify-center items-center mt-6"><img className="w-[180px] h-[180px]" src={binance} alt="binance"></img></div>

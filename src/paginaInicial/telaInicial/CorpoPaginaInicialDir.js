@@ -14,7 +14,7 @@ return(
         </div>
         </div>
         </div>
-        <img className="top-[224px] right-[200px] w-[800px] h-[800px] absolute z-50" src={mulher} alt="mulher"></img>
+        <img className="top-[224px] right-[100px] w-[800px] h-[800px] absolute z-50" src={mulher} alt="mulher"></img>
     </div>
 )
 }

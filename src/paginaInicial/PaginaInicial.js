@@ -12,17 +12,13 @@ import {Route, BrowserRouter as Router} from "react-router-dom"
 function PaginaInicial() {
     return (
         <div>
-            
-            
-            
-
             <TelaInicial></TelaInicial>
-            <PaginaInicialApp className="w-[1440px] h-[1024px]"></PaginaInicialApp>
-            <PaginaInicialCartões className="w-[1440px] h-[1024px]"></PaginaInicialCartões>
-            <PaginaInicialBenefícios className="w-[1440px] h-[1024px]"></PaginaInicialBenefícios>
-            <PaginaInicialCriptomoeda className="w-[1440px] h-[1024px]"></PaginaInicialCriptomoeda>
-            <PaginaInicialParceiras className="w-[1440px] h-[1024px]"></PaginaInicialParceiras>
-            <PaginaInicialCadidatar className="w-[1440px] h-[1024px]"></PaginaInicialCadidatar>
+            <PaginaInicialApp className="w-full h-[1024px]"></PaginaInicialApp>
+            <PaginaInicialCartões className="w-full h-[1024px]"></PaginaInicialCartões>
+            <PaginaInicialBenefícios className="w-full h-[1024px]"></PaginaInicialBenefícios>
+            <PaginaInicialCriptomoeda className="w-full h-[1024px]"></PaginaInicialCriptomoeda>
+            <PaginaInicialParceiras className="w-full h-[1024px]"></PaginaInicialParceiras>
+            <PaginaInicialCadidatar className="w-full h-[1024px]"></PaginaInicialCadidatar>
             <Footer className="w-full h-[1024px]"></Footer>
         </div>
     )

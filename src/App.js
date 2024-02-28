@@ -20,6 +20,7 @@ import PaginaBeneficiosCartãoStandart from './paginaCartãoStandart/PaginaBenef
 import PaginaCartões from './paginaCartões/paginaCartões';
 import PaginaFormularioCartãoBlack from './paginaCartãoBlack/PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack';
 import PaginaBenefícios from './paginaBenefícios/paginaBenefícios';
+
 function App() {
 
   useEffect(() => {
