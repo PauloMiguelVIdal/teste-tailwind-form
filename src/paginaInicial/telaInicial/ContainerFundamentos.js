@@ -10,28 +10,28 @@ function ContainerFundamentos() {
                 <div className="w-[200px] min-h-[200px] border-2 rounded-2xl border-laranja bg-transparent gr flex justify-center items-center">
                     <img width={128} height={128} src={tecnologia} alt="tecnologia"></img>
                 </div>
-                <h4 className="mt-2">Tecnologia</h4>
+                <h4 className="mt-2 right-[23px] relative">Tecnologia</h4>
             </div>
 
             <div>
                 <div className="w-[200px] min-h-[200px] border-2 rounded-2xl border-laranja bg-transparent flex justify-center items-center">
                     <img width={128} height={128} src={criptomoeda} alt="criptomoeda"></img>
                 </div>
-                <h4 className="mt-2">Criptomoeda</h4>
+                <h4 className="mt-2 right-[23px] relative">Criptomoeda</h4>
             </div>
 
             <div>
                 <div className="w-[200px] min-h-[200px] border-2 rounded-2xl border-laranja bg-transparent flex justify-center items-center">
                     <img width={128} height={128} src={segurança} alt="segurança"></img>
                 </div>
-                <h4 className="mt-2">Segurança</h4>
+                <h4 className="mt-2 right-[23px] relative">Segurança</h4>
             </div>
             
             <div>
                 <div className="w-[200px] min-h-[200px] border-2 rounded-2xl border-laranja bg-transparent flex justify-center items-center">
                     <img width={128} height={128} src={inovação} alt="inovação"></img>
                 </div>
-                <h4 className="mt-2">Inovação</h4>
+                <h4 className="mt-2 right-[23px] relative">Inovação</h4>
             </div>
         </div>
     )
