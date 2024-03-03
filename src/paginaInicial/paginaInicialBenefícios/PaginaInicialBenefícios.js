@@ -11,7 +11,7 @@ function PaginaInicialBenefícios() {
                 atendimento ao cliente premium.<br></br>
                 Saiba mais agora!" </h2>
 
-            <button className="linkTexto ml-[200px] pt-[350px]">
+            <button className="linkTexto ml-[200px] mt-[350px]">
                 <a href="teste" className="">
                     <h4 className="text-laranja text-[40px] fonteBold"> Saiba mais sobre benefícios </h4>
                 </a>
