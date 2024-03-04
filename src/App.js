@@ -76,6 +76,7 @@ function App() {
       <Route path='/telaInicial' element={<TelaInicialCartão/>}/>
       </Routes>
       </CentraldeDadosProvider>
+      {/* criado as proimas tarefas a serem feitas */}
     </div >
 </Router>
   )
