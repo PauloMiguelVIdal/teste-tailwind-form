@@ -12,6 +12,8 @@ function ContainerFundamentos() {
                 </div>
                 <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
                 <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
+                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
+                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
             </div>
 
             <div>
