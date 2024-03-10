@@ -10,10 +10,7 @@ function ContainerFundamentos() {
                 <div className="w-[200px] min-h-[200px] border-2 rounded-2xl border-laranja bg-transparent gr flex justify-center items-center">
                     <img width={128} height={128} src={tecnologia} alt="tecnologia"></img>
                 </div>
-                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
-                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
-                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
-                <h4 className="mt-2 right-[23px] relative">Tecnologiaaaaa</h4>
+                <h4 className="mt-2 right-[23px] relative">Tecnologia</h4>
             </div>
 
             <div>
