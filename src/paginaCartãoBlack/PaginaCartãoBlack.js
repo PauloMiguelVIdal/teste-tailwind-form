@@ -15,7 +15,11 @@ import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaF
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack(){
- 
+
+    function PaginaCartãoSolicitado(){
+
+    }
+
 
         useEffect(() => {
             scrollParaFormulárioBlack()
@@ -45,9 +49,8 @@ function PaginaCartãoBlack(){
     <div id="formularioCartaoBlack">
         < PaginaFormularioCartãoBlack/>
     </div>
- 
-        <PaginaSolicitarCartãoBlackResposta/>
-        <PaginaFormularioBlackResposta/>
+        {/* <PaginaSolicitarCartãoBlackResposta/>
+        <PaginaFormularioBlackResposta/> */}
         <PaginaSemTaxaCartãoBlack/>
         <PaginaFAQs/>
         <PaginaFAQsResposta/>
