@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
 import PaginaBeneficiosCartãoBlack from "./PaginaBeneficiosCartãoBlack/PaginaBeneficiosCartãoBlack"
@@ -14,17 +14,19 @@ import PaginaSuporteBlack from "./PaginaSuporteBlack/PaginaSuporteBlack"
 import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack";
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
-function PaginaCartãoBlack(){
+function PaginaCartãoBlack() {
 
-    function PaginaCartãoSolicitado(){
+    const [formularioSolicitado, setFormularioSolicitado] = useState(false);
 
-    }
+    const ativarFormulario = () => {
+        setFormularioSolicitado(true);
+    };
 
 
-        useEffect(() => {
-            scrollParaFormulárioBlack()
-        }, [])
-    
+    useEffect(() => {
+        scrollParaFormulárioBlack()
+    }, [])
+
 
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
@@ -39,24 +41,28 @@ function PaginaCartãoBlack(){
 
 
 
-    return(
+    return (
         <div>
-       <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
-        <PaginaBemVindoCartãoBlack/>
-        <PaginaBeneficiosCartãoBlack/>
-        <PaginaRequisitosCartãoBlack/>        
-        <PaginaSolicitarCartãoBlack/>
-    <div id="formularioCartaoBlack">
-        < PaginaFormularioCartãoBlack/>
-    </div>
-        {/* <PaginaSolicitarCartãoBlackResposta/>
-        <PaginaFormularioBlackResposta/> */}
-        <PaginaSemTaxaCartãoBlack/>
-        <PaginaFAQs/>
-        <PaginaFAQsResposta/>
-        <PaginaDepoimentosCartãoBlack/>
-        <PaginaSuporteBlack/>
-        <Footer className="w-full h-[1024px]"/>
+            <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
+            <PaginaBemVindoCartãoBlack />
+            <PaginaBeneficiosCartãoBlack />
+            <PaginaRequisitosCartãoBlack />
+            <PaginaSolicitarCartãoBlack />
+            <div id="formularioCartaoBlack">
+                < PaginaFormularioCartãoBlack ativarFormulario={ativarFormulario} />
+            </div>
+            {formularioSolicitado && (
+                <>
+                    <PaginaSolicitarCartãoBlackResposta />
+                    <PaginaFormularioBlackResposta />
+                </>
+            )}
+            <PaginaSemTaxaCartãoBlack />
+            <PaginaFAQs />
+            <PaginaFAQsResposta />
+            <PaginaDepoimentosCartãoBlack />
+            <PaginaSuporteBlack />
+            <Footer className="w-full h-[1024px]" />
         </div>
     )
 }
