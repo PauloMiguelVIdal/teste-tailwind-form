@@ -1,5 +1,6 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useContext } from "react";
+import { useEffect} from "react";
+import { CentraldeDadosContext } from "../ComponentesUniversais/CentralDeDadosContext";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
 import PaginaBeneficiosCartãoBlack from "./PaginaBeneficiosCartãoBlack/PaginaBeneficiosCartãoBlack"
@@ -16,18 +17,11 @@ import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/Pagin
 import Footer from "../ComponentesUniversais/Footer";
 function PaginaCartãoBlack() {
 
-    const [formularioSolicitado, setFormularioSolicitado] = useState(false);
-
-    const ativarFormulario = () => {
-        setFormularioSolicitado(true);
-    };
-
-
     useEffect(() => {
         scrollParaFormulárioBlack()
     }, [])
 
-
+useContext = CentraldeDadosContext
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
         if (formularioBlack) {
@@ -38,7 +32,7 @@ function PaginaCartãoBlack() {
         }
     };
 
-
+// criar o context api
 
 
     return (
