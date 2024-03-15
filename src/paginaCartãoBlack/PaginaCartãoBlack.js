@@ -43,14 +43,10 @@ useContext = CentraldeDadosContext
             <PaginaRequisitosCartãoBlack />
             <PaginaSolicitarCartãoBlack />
             <div id="formularioCartaoBlack">
-                < PaginaFormularioCartãoBlack ativarFormulario={ativarFormulario} />
+                < PaginaFormularioCartãoBlack />
             </div>
-            {formularioSolicitado && (
-                <>
                     <PaginaSolicitarCartãoBlackResposta />
                     <PaginaFormularioBlackResposta />
-                </>
-            )}
             <PaginaSemTaxaCartãoBlack />
             <PaginaFAQs />
             <PaginaFAQsResposta />
