@@ -21,7 +21,7 @@ function PaginaCartãoBlack() {
         scrollParaFormulárioBlack()
     }, [])
 
-useContext = CentraldeDadosContext
+// useContext = CentraldeDadosContext
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
         if (formularioBlack) {

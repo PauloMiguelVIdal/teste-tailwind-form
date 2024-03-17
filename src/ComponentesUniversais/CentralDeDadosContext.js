@@ -10,6 +10,7 @@ const CentraldeDadosProvider = ({ children }) => {
   const [assuntoEmail, setAssuntoEmail] = useState("");
   const [dadosDúvida, setDadosDúvida] = useState("");
   const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
+  const [formularioSolicitado, setFormularioSolicitado] = useState(false);
 
 
   const nomes = dadosNome.split(" ");
@@ -23,7 +24,9 @@ const CentraldeDadosProvider = ({ children }) => {
   }, [dadosNome]);
 
 
-
+  const ativarFormulario = () => {
+    setFormularioSolicitado(true);
+  };
 
   const AtualizarDadosDúvida = (novosDadosDúvida) => {
     setDadosDúvida(novosDadosDúvida);
@@ -74,7 +77,8 @@ const CentraldeDadosProvider = ({ children }) => {
       AtualizarDadosNumerocartão,
       dadosNumeroCartão,
       AtualizarDadosNumeroCVV,
-      dadosNumeroCVV
+      dadosNumeroCVV,
+      formularioSolicitado, ativarFormulario  
     }}>
       {children}
     </CentraldeDadosContext.Provider>

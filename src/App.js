@@ -61,6 +61,7 @@ function App() {
         <Route path="/cartãoBlack" element={<PaginaCartãoBlack/>}/>
         
         {/* <Route path="/cartãoBlack/solicitar" element={<PaginaFormularioCartãoBlack/>}/> */}
+   
         <Route path="/cartãoBlack/solicitar" element={<PaginaCartãoBlack/>} />
         <Route path="/cartãoStandart/solicitar" element={<PaginaCartãoStandart/>} />
         <Route path="/benefícios" element={<PaginaBenefícios/>}/>
