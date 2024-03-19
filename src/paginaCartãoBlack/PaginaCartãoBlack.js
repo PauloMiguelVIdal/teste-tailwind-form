@@ -32,7 +32,7 @@ function PaginaCartãoBlack() {
         }
     };
 
-// criar o context api
+// criar o context api a fim de conectar a mundança de estados da página e tudo terá como objeto central o btotão que desencadeia essa função
 
 
     return (
