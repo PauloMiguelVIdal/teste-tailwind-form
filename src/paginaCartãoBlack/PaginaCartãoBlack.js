@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React, { createContext, useState, useContext } from "react";
 import { useEffect} from "react";
-import { CentraldeDadosContext } from "../ComponentesUniversais/CentralDeDadosContext";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
 import PaginaBeneficiosCartãoBlack from "./PaginaBeneficiosCartãoBlack/PaginaBeneficiosCartãoBlack"
@@ -15,13 +14,30 @@ import PaginaSuporteBlack from "./PaginaSuporteBlack/PaginaSuporteBlack"
 import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack";
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
+
+// Criar o contexto para gerenciar o estado de ativação e desativação dos componentes
+const ComponentesContext = createContext();
+
 function PaginaCartãoBlack() {
+    const [componentesAtivos, setComponentesAtivos] = useState({
+        solicitarCartaoBlack: true,
+        formularioCartaoBlack: true,
+        solicitarCartaoBlackResposta: false,
+        formularioBlackResposta: false
+    });
 
+    const toggleComponente = (componente) => {
+        setComponentesAtivos(prevState => ({
+            ...prevState,
+            [componente]: !prevState[componente]
+        }));
+    };
+
+    // Scroll para o formulário do Cartão Black ao montar o componente
     useEffect(() => {
-        scrollParaFormulárioBlack()
-    }, [])
+        scrollParaFormulárioBlack();
+    }, []);
 
-// useContext = CentraldeDadosContext
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
         if (formularioBlack) {
@@ -32,29 +48,34 @@ function PaginaCartãoBlack() {
         }
     };
 
-// criar o context api a fim de conectar a mundança de estados da página e tudo terá como objeto central o btotão que desencadeia essa função
-
-
     return (
-        <div>
-            <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
-            <PaginaBemVindoCartãoBlack />
-            <PaginaBeneficiosCartãoBlack />
-            <PaginaRequisitosCartãoBlack />
-            <PaginaSolicitarCartãoBlack />
-            <div id="formularioCartaoBlack">
-                < PaginaFormularioCartãoBlack />
+        <ComponentesContext.Provider value={{ componentesAtivos, toggleComponente }}>
+            <div>
+                <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
+                <PaginaBemVindoCartãoBlack />
+                <PaginaBeneficiosCartãoBlack />
+                <PaginaRequisitosCartãoBlack />
+                {componentesAtivos.solicitarCartaoBlack &&
+                    <>
+                        <PaginaSolicitarCartãoBlack />
+                        <div id="formularioCartaoBlack">
+                            <PaginaFormularioCartãoBlack />
+                        </div>
+                    </>
+                }
+                {componentesAtivos.solicitarCartaoBlackResposta && <PaginaSolicitarCartãoBlackResposta />}
+                {componentesAtivos.formularioBlackResposta && <PaginaFormularioBlackResposta />}
+                <PaginaSemTaxaCartãoBlack />
+                <PaginaFAQs />
+                <PaginaFAQsResposta />
+                <PaginaDepoimentosCartãoBlack />
+                <PaginaSuporteBlack />
+                <Footer className="w-full h-[1024px]" />
             </div>
-                    <PaginaSolicitarCartãoBlackResposta />
-                    <PaginaFormularioBlackResposta />
-            <PaginaSemTaxaCartãoBlack />
-            <PaginaFAQs />
-            <PaginaFAQsResposta />
-            <PaginaDepoimentosCartãoBlack />
-            <PaginaSuporteBlack />
-            <Footer className="w-full h-[1024px]" />
-        </div>
+        </ComponentesContext.Provider>
     )
 }
 
-export default PaginaCartãoBlack
+export default PaginaCartãoBlack;
+
+// Em cada componente que você deseja controlar sua ativação/desativação, você pode usar o contexto ComponentesContext para acessar o estado e a função para alternar os componentes.
