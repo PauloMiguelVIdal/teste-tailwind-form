@@ -7,7 +7,7 @@ function PaginaFormularioCartãoBlack({ativarFormulario}) {
     return (
         <div className="w-full h-[1024px] bg-gradient-to-b from-roxoForte to-black">
             <h1 className="text-laranja text-[100px] text-center fonteBold pt-[124px] mb-[124px]">BLACK</h1>
-            <NomeEmail  ativarFormulario={ativarFormulario}></NomeEmail>
+            <NomeEmail></NomeEmail>
         </div>
     )
 }
