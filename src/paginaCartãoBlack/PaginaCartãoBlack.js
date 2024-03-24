@@ -27,6 +27,8 @@ function PaginaCartãoBlack() {
     });
 
     const toggleComponente = (componente) => {
+        console.log("Toggle componente:", componente);
+
         setComponentesAtivos(prevState => ({
             ...prevState,
             [componente]: !prevState[componente]
@@ -47,7 +49,7 @@ function PaginaCartãoBlack() {
             });
         }
     };
-
+    console.log("Estado Atual:", componentesAtivos); // Adicione esta linha para depurar o estado atual
     return (
         <ComponentesContext.Provider value={{ componentesAtivos, toggleComponente }}>
             <div>
@@ -59,7 +61,7 @@ function PaginaCartãoBlack() {
                     <>
                         <PaginaSolicitarCartãoBlack />
                         <div id="formularioCartaoBlack">
-                            <PaginaFormularioCartãoBlack />
+                            <PaginaFormularioCartãoBlack toggleComponente={toggleComponente}/>
                         </div>
                     </>
                 }

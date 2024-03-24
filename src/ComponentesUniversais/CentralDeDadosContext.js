@@ -12,73 +12,43 @@ const CentraldeDadosProvider = ({ children }) => {
   const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
   const [formularioSolicitado, setFormularioSolicitado] = useState(false);
 
-
   const nomes = dadosNome.split(" ");
   const doisPrimeirosNomes = nomes.slice(0, 2).join(" ");
 
   useEffect(() => {
-    // Atualiza dadosPrimeirosNome sempre que dadosNome muda
     const novosNomes = dadosNome.split(" ");
     const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ").toUpperCase();
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
 
-
   const ativarFormulario = () => {
     setFormularioSolicitado(true);
   };
 
-  const AtualizarDadosDúvida = (novosDadosDúvida) => {
-    setDadosDúvida(novosDadosDúvida);
+  const desativarFormulario = () => {
+    setFormularioSolicitado(false);
   };
-
-  const AtualizarDadosPrimeiroNome = (novosDadosPrimeirosNome) => {
-    setDadosPrimeirosNome(novosDadosPrimeirosNome);
-  };
-
-  const AtualizarDadosEmail = (novosDadosEmail) => {
-    setDadosEmail(novosDadosEmail);
-  };
-
-  const AtualizarDadosNome = (novosDadosNome) => {
-    setDadosNome(novosDadosNome);
-  };
-  
-  const AtualizarDadosNumerocartão = (novosDadosNumeroCartão) => {
-    setDadosNumeroCartão(novosDadosNumeroCartão);
-  };
-  ;
-  const AtualizarDadosNumeroCVV = (novosDadosNumeroCVV) => {
-    setDadosNumeroCVV(novosDadosNumeroCVV);
-  };
-
-  const AtualizarAssuntoEmail = (novosDadosAssuntoEmail) => {
-    setAssuntoEmail(novosDadosAssuntoEmail);
-  };
-
-  console.log("Contexto - dadosPrimeirosNome:", dadosPrimeirosNome);
 
   return (
     <CentraldeDadosContext.Provider value={{
       dadosNome,
-      AtualizarDadosNome,
-      setDadosNome,
+      AtualizarDadosNome: setDadosNome,
       dadosEmail,
-      AtualizarDadosEmail,
-      setDadosEmail,
+      AtualizarDadosEmail: setDadosEmail,
       assuntoEmail,
-      setAssuntoEmail,
-      AtualizarAssuntoEmail,
+      AtualizarAssuntoEmail: setAssuntoEmail,
       doisPrimeirosNomes,
       dadosPrimeirosNome,
-      AtualizarDadosPrimeiroNome,
-      AtualizarDadosDúvida,
+      AtualizarDadosPrimeiroNome: setDadosPrimeirosNome,
+      AtualizarDadosDúvida: setDadosDúvida,
       dadosDúvida,
-      AtualizarDadosNumerocartão,
+      AtualizarDadosNumerocartão: setDadosNumeroCartão,
       dadosNumeroCartão,
-      AtualizarDadosNumeroCVV,
+      AtualizarDadosNumeroCVV: setDadosNumeroCVV,
       dadosNumeroCVV,
-      formularioSolicitado, ativarFormulario  
+      formularioSolicitado,
+      ativarFormulario,
+      desativarFormulario,
     }}>
       {children}
     </CentraldeDadosContext.Provider>
