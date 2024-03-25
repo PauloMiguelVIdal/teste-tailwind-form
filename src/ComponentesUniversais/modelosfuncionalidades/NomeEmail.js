@@ -1,20 +1,18 @@
 import React, { useState, useContext } from "react";
 import { CentraldeDadosContext } from "../CentralDeDadosContext";
 
-function NomeEmail({ toggleComponente }) {
+function NomeEmail() {
     const { dadosEmail, AtualizarDadosEmail, 
             dadosNome, AtualizarDadosNome, 
             dadosNumeroCartão, AtualizarDadosNumerocartão, 
-            dadosNumeroCVV, AtualizarDadosNumeroCVV,
-            formularioSolicitado, ativarFormulario } = useContext(CentraldeDadosContext);
-
+            dadosNumeroCVV, AtualizarDadosNumeroCVV
+            // ,formularioSolicitado, ativarFormulario 
+        } 
+            = useContext(CentraldeDadosContext);
+const toggleComponente = useContext(CentraldeDadosContext)
     const [novoEmail, setNovoEmail] = useState('');
     const [novoNome, setNovoNome] = useState('');
 
-    const handleClick = () => {
-        // Altera o estado do componente desejado em PaginaCartãoBlack
-        toggleComponente("solicitarCartaoBlack");
-    };
 
     function handleChangeEmail(event) {
         setNovoEmail(event.target.value);
@@ -40,8 +38,7 @@ function NomeEmail({ toggleComponente }) {
             AtualizarDadosNome(novoNome);
             AtualizarDadosNumerocartão(novoNumeroCartão);
             AtualizarDadosNumeroCVV(novoNumeroCVV);
-            ativarFormulario();
-        }
+            toggleComponente('formularioCartaoBlack')        }
     }
 
     return (
