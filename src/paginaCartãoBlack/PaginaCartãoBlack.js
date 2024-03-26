@@ -1,5 +1,5 @@
-import React, { createContext, useState, useContext } from "react";
-import { useEffect} from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
 import PaginaBeneficiosCartãoBlack from "./PaginaBeneficiosCartãoBlack/PaginaBeneficiosCartãoBlack"
@@ -14,26 +14,11 @@ import PaginaSuporteBlack from "./PaginaSuporteBlack/PaginaSuporteBlack"
 import PaginaFormularioCartãoBlack from "./PaginaFormularioCartãoBlack/PaginaFormularioCartãoBlack";
 import PaginaFormularioBlackResposta from "./PaginaFormularioBlackResposta/PaginaFormularioBlackResposta";
 import Footer from "../ComponentesUniversais/Footer";
+import { CentraldeDadosContext } from "../ComponentesUniversais/CentralDeDadosContext"
 
-// Criar o contexto para gerenciar o estado de ativação e desativação dos componentes
-const ComponentesContext = createContext();
+
 
 function PaginaCartãoBlack() {
-    const [componentesAtivos, setComponentesAtivos] = useState({
-        solicitarCartaoBlack: true,
-        formularioCartaoBlack: true,
-        solicitarCartaoBlackResposta: false,
-        formularioBlackResposta: false
-    });
-
-    const toggleComponente = (componente) => {
-        console.log("Toggle componente:", componente);
-
-        setComponentesAtivos(prevState => ({
-            ...prevState,
-            [componente]: !prevState[componente]
-        }));
-    };
 
     // Scroll para o formulário do Cartão Black ao montar o componente
     useEffect(() => {
@@ -49,32 +34,26 @@ function PaginaCartãoBlack() {
             });
         }
     };
-    console.log("Estado Atual:", componentesAtivos); // Adicione esta linha para depurar o estado atual
     return (
-        <ComponentesContext.Provider value={{ componentesAtivos, toggleComponente }}>
-            <div>
-                <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
-                <PaginaBemVindoCartãoBlack />
-                <PaginaBeneficiosCartãoBlack />
-                <PaginaRequisitosCartãoBlack />
-                {componentesAtivos.solicitarCartaoBlack &&
-                    <>
-                        <PaginaSolicitarCartãoBlack />
-                        <div id="formularioCartaoBlack">
-                            <PaginaFormularioCartãoBlack toggleComponente={toggleComponente}/>
-                        </div>
-                    </>
-                }
-                {componentesAtivos.solicitarCartaoBlackResposta && <PaginaSolicitarCartãoBlackResposta />}
-                {componentesAtivos.formularioBlackResposta && <PaginaFormularioBlackResposta />}
-                <PaginaSemTaxaCartãoBlack />
-                <PaginaFAQs />
-                <PaginaFAQsResposta />
-                <PaginaDepoimentosCartãoBlack />
-                <PaginaSuporteBlack />
-                <Footer className="w-full h-[1024px]" />
+
+        <div>
+            <TelaInicialCartãoBlack scrollParaFormulárioBlack={scrollParaFormulárioBlack} />
+            <PaginaBemVindoCartãoBlack />
+            <PaginaBeneficiosCartãoBlack />
+            <PaginaRequisitosCartãoBlack />
+            <PaginaSolicitarCartãoBlack />
+            <div id="formularioCartaoBlack">
+                <PaginaFormularioCartãoBlack />
             </div>
-        </ComponentesContext.Provider>
+            <PaginaSolicitarCartãoBlackResposta />
+            <PaginaFormularioBlackResposta />
+            <PaginaSemTaxaCartãoBlack />
+            <PaginaFAQs />
+            <PaginaFAQsResposta />
+            <PaginaDepoimentosCartãoBlack />
+            <PaginaSuporteBlack />
+            <Footer className="w-full h-[1024px]" />
+        </div>
     )
 }
 

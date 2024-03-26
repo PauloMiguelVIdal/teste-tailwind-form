@@ -5,8 +5,8 @@ function NomeEmail() {
     const { dadosEmail, AtualizarDadosEmail, 
             dadosNome, AtualizarDadosNome, 
             dadosNumeroCartão, AtualizarDadosNumerocartão, 
-            dadosNumeroCVV, AtualizarDadosNumeroCVV
-            ,formularioSolicitado, AtualizarFormulario,alternarFormulário
+            dadosNumeroCVV, AtualizarDadosNumeroCVV,
+            estadoFormulário ,AtualizarEstadoFormulário
         } 
             = useContext(CentraldeDadosContext);
     const [novoEmail, setNovoEmail] = useState('');
@@ -39,11 +39,12 @@ function NomeEmail() {
             AtualizarDadosNome(novoNome);
             AtualizarDadosNumerocartão(novoNumeroCartão);
             AtualizarDadosNumeroCVV(novoNumeroCVV);
-            alternarFormulário()
+            AtualizarEstadoFormulário(false);
                  }
             else{
                 alert("Campos não preenchidos")
             }
+            console.log(estadoFormulário)
     }
     
     return (
