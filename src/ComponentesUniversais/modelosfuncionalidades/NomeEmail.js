@@ -6,12 +6,12 @@ function NomeEmail() {
             dadosNome, AtualizarDadosNome, 
             dadosNumeroCartão, AtualizarDadosNumerocartão, 
             dadosNumeroCVV, AtualizarDadosNumeroCVV
-            // ,formularioSolicitado, ativarFormulario 
+            ,formularioSolicitado, AtualizarFormulario,alternarFormulário
         } 
             = useContext(CentraldeDadosContext);
-const toggleComponente = useContext(CentraldeDadosContext)
     const [novoEmail, setNovoEmail] = useState('');
     const [novoNome, setNovoNome] = useState('');
+    
 
 
     function handleChangeEmail(event) {
@@ -26,6 +26,7 @@ const toggleComponente = useContext(CentraldeDadosContext)
         return String(Math.random() * 22).slice(2); // Corrigindo a geração do número do cartão
     }
 
+    
     function gerarNumeroCVV() {
         return String(Math.floor(Math.random() * 1000));
     }
@@ -38,9 +39,13 @@ const toggleComponente = useContext(CentraldeDadosContext)
             AtualizarDadosNome(novoNome);
             AtualizarDadosNumerocartão(novoNumeroCartão);
             AtualizarDadosNumeroCVV(novoNumeroCVV);
-            toggleComponente('formularioCartaoBlack')        }
+            alternarFormulário()
+                 }
+            else{
+                alert("Campos não preenchidos")
+            }
     }
-
+    
     return (
         <div className="flex justify-center items-center flex-col w-[600px] h-[400px] rounded-[40px] border-laranja border-[2px] m-auto">
             <div className="w-[500px] h-[80px] rounded-[27.50px] text-white bg-roxo bg-opacity-40 flex justify-center items-center">

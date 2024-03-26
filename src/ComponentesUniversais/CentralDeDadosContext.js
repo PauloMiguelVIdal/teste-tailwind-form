@@ -21,6 +21,14 @@ const CentraldeDadosProvider = ({ children }) => {
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
 
+function alternarFormulário(){
+  if(formularioSolicitado==true){
+    setFormularioSolicitado(false)
+  }else{
+    setFormularioSolicitado(true)
+  }
+
+}  
   const ativarFormulario = () => {
     setFormularioSolicitado(true);
   };
@@ -48,7 +56,7 @@ const CentraldeDadosProvider = ({ children }) => {
       dadosNumeroCVV,
       formularioSolicitado,
       ativarFormulario,
-      desativarFormulario,
+      desativarFormulario,alternarFormulário
     }}>
       {children}
     </CentraldeDadosContext.Provider>
