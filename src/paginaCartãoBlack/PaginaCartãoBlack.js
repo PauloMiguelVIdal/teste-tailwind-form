@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useEffect } from "react";
 import TelaInicialCartãoBlack from "../paginaCartãoBlack/telaInicialCartãoBlack/TelaInicialCartãoBlack"
 import PaginaBemVindoCartãoBlack from "./PaginaBemVindoCartãoBlack/PaginaBemVindoCartãoBlack"
@@ -20,11 +20,15 @@ import { CentraldeDadosContext } from "../ComponentesUniversais/CentralDeDadosCo
 
 function PaginaCartãoBlack() {
 
+
+    const estadoFormulário = useContext(CentraldeDadosContext)
+
     // Scroll para o formulário do Cartão Black ao montar o componente
     useEffect(() => {
         scrollParaFormulárioBlack();
     }, []);
 
+    console.log(PaginaFormularioCartãoBlack)
     const scrollParaFormulárioBlack = () => {
         const formularioBlack = document.getElementById("formularioCartaoBlack");
         if (formularioBlack) {
@@ -34,6 +38,7 @@ function PaginaCartãoBlack() {
             });
         }
     };
+    console.log(estadoFormulário)
     return (
 
         <div>
@@ -42,10 +47,11 @@ function PaginaCartãoBlack() {
             <PaginaBeneficiosCartãoBlack />
             <PaginaRequisitosCartãoBlack />
             <PaginaSolicitarCartãoBlack />
+
             <div id="formularioCartaoBlack">
-                <PaginaFormularioCartãoBlack />
+                {estadoFormulário ? < PaginaFormularioCartãoBlack /> : null}
             </div>
-            <PaginaSolicitarCartãoBlackResposta />
+            {estadoFormulário ? <PaginaSolicitarCartãoBlackResposta /> : null}
             <PaginaFormularioBlackResposta />
             <PaginaSemTaxaCartãoBlack />
             <PaginaFAQs />

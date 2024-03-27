@@ -39,7 +39,7 @@ function NomeEmail() {
             AtualizarDadosNome(novoNome);
             AtualizarDadosNumerocartão(novoNumeroCartão);
             AtualizarDadosNumeroCVV(novoNumeroCVV);
-            AtualizarEstadoFormulário(false);
+            AtualizarEstadoFormulário(!estadoFormulário);
                  }
             else{
                 alert("Campos não preenchidos")

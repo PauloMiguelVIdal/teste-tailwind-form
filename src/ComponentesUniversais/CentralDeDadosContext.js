@@ -20,7 +20,7 @@ const CentraldeDadosProvider = ({ children }) => {
     const dadosPrimeirosNome = novosNomes.slice(0, 2).join(" ").toUpperCase();
     setDadosPrimeirosNome(dadosPrimeirosNome);
   }, [dadosNome]);
-
+console.log(estadoFormulário)
 
   return (
     <CentraldeDadosContext.Provider value={{
