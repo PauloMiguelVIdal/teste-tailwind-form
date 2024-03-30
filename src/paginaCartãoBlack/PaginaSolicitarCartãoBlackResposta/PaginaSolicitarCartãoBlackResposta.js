@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import CartõesBlackSeparados from "./CartõesBlackSeparados";
-
+import { CentraldeDadosContext } from "../../ComponentesUniversais/CentralDeDadosContext";
 function PaginaSolicitarCartãoBlackResposta() {
+    const { estadoFormulário} = useContext(CentraldeDadosContext);
+    console.log(estadoFormulário)
+    if(estadoFormulário == false){
     return (
         <div className="w-full h-[1024px] bg-white">
             <h1 className="text-center text-[60px] fonteBold text-roxo pt-[115px]">SOLICITAR CARTÃO</h1>
@@ -12,5 +15,5 @@ function PaginaSolicitarCartãoBlackResposta() {
         </div>
     )
 }
-
+}
 export default PaginaSolicitarCartãoBlackResposta

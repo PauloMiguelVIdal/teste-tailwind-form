@@ -5,12 +5,14 @@ import NomeEmail from "../../ComponentesUniversais/modelosfuncionalidades/NomeEm
 function PaginaFormularioCartãoBlack() {
     const { estadoFormulário} = useContext(CentraldeDadosContext);
     console.log(estadoFormulário)
+
+    if(estadoFormulário == true){
     return (
         <div className="w-full h-[1024px] bg-gradient-to-b from-roxoForte to-black">
             <h1 className="text-laranja text-[100px] text-center fonteBold pt-[124px] mb-[124px]">BLACK</h1>
             <NomeEmail />
         </div>
     );
+    }
 }
-
 export default PaginaFormularioCartãoBlack;

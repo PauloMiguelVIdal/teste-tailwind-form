@@ -23,7 +23,7 @@ function NomeEmail() {
     }
 
     function gerarNumeroCartao() {
-        return String(Math.random() * 22).slice(2); // Corrigindo a geração do número do cartão
+        return String(Math.random() * 22).slice(3); // Corrigindo a geração do número do cartão
     }
 
     
@@ -45,6 +45,8 @@ function NomeEmail() {
                 alert("Campos não preenchidos")
             }
             console.log(estadoFormulário)
+            alert(`Criamos o seu novo cartão OBANK ${novoNome}`)
+            
     }
     
     return (
