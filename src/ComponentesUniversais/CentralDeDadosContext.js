@@ -11,6 +11,7 @@ const CentraldeDadosProvider = ({ children }) => {
   const [dadosDúvida, setDadosDúvida] = useState("");
   const [dadosPrimeirosNome, setDadosPrimeirosNome] = useState("");
   const [estadoFormulário, setEstadoFormulário] = useState(true);
+  const [versoCartão, setVersoCartão] = useState(false);
 
   const nomes = dadosNome.split(" ");
   const doisPrimeirosNomes = nomes.slice(0, 2).join(" ");
@@ -41,6 +42,8 @@ console.log(estadoFormulário)
       dadosNumeroCVV,
       AtualizarEstadoFormulário: setEstadoFormulário,
       estadoFormulário,
+      AtualizarVersoCartão: setVersoCartão,
+      versoCartão
     }}>
       {children}
     </CentraldeDadosContext.Provider>
