@@ -9,11 +9,11 @@ import Footer from "../ComponentesUniversais/Footer";
 function PaginaTodosOsBenefíciosCartãoStandart() {
     return (
         <div>
-            <TelaInicialCartãoStandart></TelaInicialCartãoStandart>
-            <PaginaAoEscolherBenefíciosCartãoStandart></PaginaAoEscolherBenefíciosCartãoStandart>
-            <PaginaListaBenefíciosCartãoStandart></PaginaListaBenefíciosCartãoStandart>
-            <PaginaListaFimBenefíciosCartãoStandart></PaginaListaFimBenefíciosCartãoStandart>
-            <PaginaBenefíciosExclusivosCartãoStandart></PaginaBenefíciosExclusivosCartãoStandart>
+            <TelaInicialCartãoStandart/>
+            <PaginaAoEscolherBenefíciosCartãoStandart/>
+            <PaginaListaBenefíciosCartãoStandart/>
+            <PaginaListaFimBenefíciosCartãoStandart/>
+            <PaginaBenefíciosExclusivosCartãoStandart/>
             <Footer className="w-full h-[1024px]"></Footer>
         </div>
     )
