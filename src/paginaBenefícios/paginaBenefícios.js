@@ -14,7 +14,7 @@ function PaginaBenefícios() {
             <PaginaBemVindoBenefícios/>
             <PaginaBenefíciosGerais/>
             <PaginaVerBenefícios/>
-            <Footer/>
+            <Footer className="w-full h-[1024px]"/>
         </div>
     )
 }
