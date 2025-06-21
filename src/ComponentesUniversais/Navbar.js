@@ -37,7 +37,7 @@ function Navbar() {
                 </a>
                 <a href="cultura">
                 <li className="navbarHover">
-                    Cultura
+                    Cultura alterar
                 </li>
                 </a>
                 {/* <li className="navbarHover">
