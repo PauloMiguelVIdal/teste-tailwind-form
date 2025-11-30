@@ -10,7 +10,9 @@ function Navbar() {
 
     return (
         <div className="bg-roxo w-full h-32 flex flex-row items-center place-content-between">
-           <a href="/"> <img width={100} height={100} className="flex items-center ml-4" src={obcoin} alt="obcoin"></img></a>
+            <div className="bg-white/10 flex items-center justify-center rounded-[3 0px] ml-4 p-2">
+           <a href="/"> <img width={100} height={100} className="flex items-center" src={obcoin} alt="obcoin"></img></a>
+            </div>
             <ul className="flex text-laranja text-3xl w-[1200] place-content-evenly fonteBold">
                 {/* <li className="navbarHover">
                     App
@@ -37,7 +39,7 @@ function Navbar() {
                 </a>
                 <a href="cultura">
                 <li className="navbarHover">
-                    Cultura alterar
+                    Cultura
                 </li>
                 </a>
                 {/* <li className="navbarHover">
